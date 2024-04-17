@@ -1,1 +1,1 @@
-# Yennenga-Progress
+# Yennenga Progress website
