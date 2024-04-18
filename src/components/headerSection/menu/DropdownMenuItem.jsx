@@ -4,9 +4,9 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function DropdownMenuItem({ dropdownItem }) {
+export default function DropdownMenuItem({ children }) {
   return (
-    <Menu.Item>
+    <Menu.Item className="py-2 text-xs">
       {({ active }) => (
         <a
           href="#"
@@ -15,7 +15,7 @@ export default function DropdownMenuItem({ dropdownItem }) {
             "block px-4 py-2 text-sm",
           )}
         >
-          {dropdownItem}
+          {children}
         </a>
       )}
     </Menu.Item>

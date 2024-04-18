@@ -3,8 +3,8 @@ import NavBar from "./menu/NavBar";
 
 export default function Header() {
   return (
-    <header className="header">
-      <TopBar/>
+    <header className="header font-['Arial'] text-lg text-light-gray">
+      <TopBar />
       <NavBar />
     </header>
   );

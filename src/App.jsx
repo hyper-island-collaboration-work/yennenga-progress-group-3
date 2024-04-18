@@ -1,10 +1,9 @@
-import Header from "./components/headerSection/Header";
-
+import Hero from "./components/heroSection.jsx/Hero";
 
 function App() {
   return (
     <>
-    <Header />
+      <Hero />
     </>
   );
 }
