@@ -1,0 +1,11 @@
+.topbar-buttons button {
+  border-radius: 30px;
+  border: 2px #f0f0f0 solid;
+  height: 2.813rem;
+  padding-inline: 1rem;
+}
+
+.topbar-buttons button:hover {
+   background-color: #215ECF;
+   border: 2px #215ECF solid
+}
