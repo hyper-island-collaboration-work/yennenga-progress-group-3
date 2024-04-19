@@ -14,7 +14,7 @@ export default function OurMethods() {
     },
     {
       image: "method3.png",
-      heading: "Competence for change",
+      heading: "Sustainable societies",
       text: "The Yennenga Progress global network of competence, gives Change Makers locally, continuous further training, on their request, with tools and knowledge they need for the next step of development. Collaboration is born to find good solutions, fulfill the needs and create best practice to help others achieve the UN Global Goals.",
     },
   ];
@@ -24,7 +24,7 @@ export default function OurMethods() {
       <div>
         <h2 className="text-black text-5xl font-bold font-['Apple SD Gothic Neo']">Our method</h2>
       </div>
-      <div className="flex items-center gap-6">
+      <div className="flex gap-6">
         {methodItems.map(({ image, heading, text }) => (
           <Method key={heading} image={image} text={text} heading={heading} />
         ))}
