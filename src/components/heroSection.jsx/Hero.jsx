@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="hero-section">
       <Header />
       <div className="hero-section--container">
-        <div className="heading font-['Apple SD Gothic Neo'] text-5xl font-bold text-black">
+        <div className="text-light-gray text-5xl font-bold font-['Apple SD Gothic Neo']">
           <h1>
             Yennenga Progress creates sustainable societies via “The Good
             Village”
