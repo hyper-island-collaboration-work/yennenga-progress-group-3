@@ -5,7 +5,7 @@ export default function Method({image, heading, text}) {
             <img src={`/images/${image}`} />
          </div>
          <div>
-            <h3 className="text-black text-4xl font-bold font-['Apple SD Gothic Neo'] leading-10">{heading}</h3>
+            <h3 className="text-black text-4xl font-semibold font-['Apple SD Gothic Neo'] leading-10">{heading}</h3>
          </div>
          <div className="w-[362px]">
             <p className="text-black text-lg font-normal font-['Arial'] leading-loose">{text}</p>

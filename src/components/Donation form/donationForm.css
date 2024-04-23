@@ -1,0 +1,64 @@
+/* Customize the label (the container) */
+.giveAs-btn {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.giveAs-btn input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: transparent;
+  border: 2px #f0f0f0 solid;
+  border-radius: 50%;
+}
+
+/* On mouse-over*/
+.giveAs-btn:hover input ~ .checkmark {
+  background-color: transparent;
+}
+
+/* When the radio button is checked*/
+.giveAs-btn input:checked ~ .checkmark {
+  background-color: #c0c0c0;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.giveAs-btn input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.giveAs-btn .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #215ecf;
+}
