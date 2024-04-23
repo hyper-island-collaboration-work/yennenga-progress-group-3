@@ -32,7 +32,7 @@ export default function NavBar() {
   ];
 
   return (
-    <nav className="nabvar flex h-24 items-center justify-between gap-96 bg-black bg-opacity-70 pl-6 pr-14 font-normal">
+    <nav className="nabvar flex h-24 items-center justify-between gap-96 bg-black pl-6 pr-14 font-normal">
       <div className="navbar-logo">
         <a href="#">
           <img src="/images/yp_logo_brown.svg" alt="Yennenga Progress Logo" />

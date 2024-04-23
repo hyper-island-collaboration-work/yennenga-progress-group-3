@@ -19,13 +19,12 @@ export default function Dropdown({ rootItem, items }) {
       as="div"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="relative inline-block text-left"
+      className="relative inline-block h-full text-left"
     >
       <div>
         <Menu.Button className=" inline-flex items-center justify-center gap-2">
           {rootItem}
-          <img src="/vector/dropdown.svg" alt="dropdown icon" 
-         />
+          <img src="/vector/dropdown.svg" alt="dropdown icon" />
         </Menu.Button>
       </div>
 
@@ -39,9 +38,7 @@ export default function Dropdown({ rootItem, items }) {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items
-          className="absolute mt-[2.1rem] w-48 bg-black opacity-70"
-        >
+        <Menu.Items className="absolute w-48 bg-black py-3">
           <div className="py-4">
             {items.map((item) => (
               <DropdownMenuItem>{item}</DropdownMenuItem>
