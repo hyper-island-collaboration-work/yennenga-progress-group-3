@@ -7,24 +7,24 @@ export default function DonationForm() {
         <legend>Give as:</legend>
         <label className="custom-radioBtn-round">
           Private Person
-          <input id="private" type="radio" value="private " name="private" />
+          <input id="private" type="radio" value="private " name="type" />
           <span class="checkmark"></span>
         </label>
         <label className="custom-radioBtn-round">
           Company
-          <input type="radio" id="company" name="company" value="Company" />
+          <input type="radio" id="company" name="type" value="Company" />
           <span class="checkmark"></span>
         </label>
       </div>
       <div className="flex justify-center">
-        <label className="custom-radioBtn-big ">
-          <input id="donate" type="radio" value="donate" name="donate" />
+        <label className="custom-radioBtn-big">
+          <input id="donate" type="radio" value="donate" name="donation" />
           <span class="checkmark rounded-bl-3xl rounded-tl-3xl border-2 border-light-gray px-11 py-2.5">
             Donate
           </span>
         </label>
         <label className="custom-radioBtn-big">
-          <input id="montly" type="radio" value="Give monthly" name="monthly" />
+          <input id="montly" type="radio" value="Give monthly" name="donation" />
           <span class="checkmark rounded-br-3xl rounded-tr-3xl border-b-2 border-r-2 border-t-2 border-light-gray px-11 py-2.5">
             Give monthly
           </span>
@@ -32,19 +32,19 @@ export default function DonationForm() {
       </div>
       <div className="flex justify-center">
         <label className="custom-radioBtn-big ">
-          <input id="200" type="radio" value="200" name="200" />
+          <input id="200" type="radio" value="200" name="amount" />
           <span class="checkmark rounded-bl-3xl rounded-tl-3xl border-2 border-light-gray px-7 py-2.5">
             200 kr
           </span>
         </label>
         <label className="custom-radioBtn-big ">
-          <input id="400" type="radio" value="400" name="400" />
+          <input id="400" type="radio" value="400" name="amount" />
           <span class="checkmark border-b-2 border-t-2 border-light-gray px-7 py-2.5">
             400 kr
           </span>
         </label>
         <label className="custom-radioBtn-big ">
-          <input id="400" type="radio" value="400" name="400" />
+          <input id="400" type="radio" value="400" name="amount" />
           <span class="checkmark rounded-br-3xl rounded-tr-3xl border-2 border-light-gray px-7 py-2.5">
             Optional
           </span>
