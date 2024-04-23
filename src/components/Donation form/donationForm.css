@@ -1,5 +1,5 @@
 /* Customize the label (the container) */
-.giveAs-btn {
+.custom-radioBtn-round {
   position: relative;
   display: block;
   padding-left: 30px;
@@ -11,7 +11,7 @@
 }
 
 /* Hide the browser's default radio button */
-.giveAs-btn input {
+.custom-radioBtn-round input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -20,7 +20,7 @@
 }
 
 /* Create a custom radio button */
-.checkmark {
+.custom-radioBtn-round .checkmark {
   position: absolute;
   top: 6px;
   left: 0;
@@ -32,12 +32,12 @@
 }
 
 /* On mouse-over*/
-.giveAs-btn:hover input ~ .checkmark {
+.custom-radioBtn-round:hover input ~ .checkmark {
   background-color: transparent;
 }
 
 /* When the radio button is checked*/
-.giveAs-btn input:checked ~ .checkmark {
+.custom-radioBtn-round input:checked ~ .checkmark {
   background-color: #c0c0c0;
 }
 
@@ -49,12 +49,12 @@
 }
 
 /* Show the indicator (dot/circle) when checked */
-.giveAs-btn input:checked ~ .checkmark:after {
+.custom-radioBtn-round input:checked ~ .checkmark:after {
   display: block;
 }
 
 /* Style the indicator (dot/circle) */
-.giveAs-btn .checkmark:after {
+.custom-radioBtn-round .checkmark:after {
   top: 5px;
   left: 5px;
   width: 10px;
@@ -62,3 +62,38 @@
   border-radius: 50%;
   background: #215ecf;
 }
+
+.custom-radioBtn-big {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.custom-radioBtn-big input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.custom-radioBtn-big .checkmark {
+  background-color: transparent;
+}
+
+/* On mouse-over*/
+.custom-radioBtn-big:hover input ~ .checkmark {
+  background-color: transparent;
+}
+
+/* When the radio button is checked*/
+.custom-radioBtn-big input:checked ~ .checkmark {
+  background-color: #215ecf;
+}
+
+
