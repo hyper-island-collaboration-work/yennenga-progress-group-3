@@ -1,13 +1,88 @@
 import React, { useState, useEffect } from 'react';
-import * as sponsors from "Sponsors/index.jsx";
+
+import {
+   logo1,
+   logo2,
+   logo3,
+   logo4,
+   logo5,
+   logo6,
+   logo7,
+   logo8,
+   logo9,
+   logo10,
+   logo11,
+   logo12,
+   logo13,
+   logo14,
+   logo15,
+   logo16,
+   logo17,
+   logo18,
+   logo19,
+   logo20,
+   logo21,
+   logo22,
+   logo23,
+   logo24,
+   logo25,
+   logo26,
+   logo27,
+   logo28,
+   logo29,
+   logo30,
+   logo31,
+   logo32,
+   logo33,
+   logo34,
+   logo35,
+   logo36,
+   logo37,
+ } from "../../../public/Sponsors"; 
 
 
-
-const images1 = [sponsors.logo1, sponsors.logo2, sponsors.logo3, sponsors.logo4, sponsors.logo5, sponsors.logo6,sponsors.logo7, sponsors.logo8, sponsors.logo9, sponsors.logo10, sponsors.logo11, sponsors.logo12,
-   sponsors.logo13, sponsors.logo14, sponsors.logo15]
-  const images2 = [lsponsors.ogo16, sponsors.logo17, sponsors.logo18, sponsors.logo19, sponsors.logo20, sponsors.logo21, sponsors.logo22, sponsors.logo23, sponsors.logo24, sponsors.logo25, sponsors.logo26, sponsors.logo27, sponsors.logo28,
-   sponsors.logo29, sponsors.logo30, sponsors.logo31, sponsors.logo32, sponsors.logo33, sponsors.logo34, sponsors.logo35, sponsors.logo36, sponsors.logo37]; // Array of image paths
-
+ const images1 = [
+   logo1,
+   logo2,
+   logo3,
+   logo4,
+   logo5,
+   logo6,
+   logo7,
+   logo8,
+   logo9,
+   logo10,
+   logo11,
+   logo12,
+   logo13,
+   logo14,
+   logo15,
+ ]; // Array of image paths
+ 
+ const images2 = [
+   logo16,
+   logo17,
+   logo18,
+   logo19,
+   logo20,
+   logo21,
+   logo22,
+   logo23,
+   logo24,
+   logo25,
+   logo26,
+   logo27,
+   logo28,
+   logo29,
+   logo30,
+   logo31,
+   logo32,
+   logo33,
+   logo34,
+   logo35,
+   logo36,
+   logo37,
+ ]; 
 const Partner = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
