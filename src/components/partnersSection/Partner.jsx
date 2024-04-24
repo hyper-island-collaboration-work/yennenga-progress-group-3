@@ -38,7 +38,7 @@ import {
    logo35,
    logo36,
    logo37,
- } from "../../../public/Sponsors"; 
+ } from "../../../public/images/Sponsors"; 
 
 
  const images1 = [
@@ -100,7 +100,7 @@ const Partner = () => {
       if (!isPaused) {
         setScrollPosition(prevPosition => prevPosition + 1);
       }
-    }, 500); // Adjust the duration (in milliseconds) to control the speed of the scrolling
+    }, 600); // Adjust the duration (in milliseconds) to control the speed of the scrolling
 
     return () => clearInterval(interval);
   }, [isPaused]);
@@ -111,7 +111,7 @@ const Partner = () => {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      <div className="carousel rounded-box gap-8 bg-black">
+      <div className="carousel rounded-box gap-8 bg-grey">
         {images1.map((image, index) => {
           const adjustedIndex = (scrollPosition + index) % images1.length;
           return (
@@ -124,7 +124,7 @@ const Partner = () => {
           );
         })}
       </div>
-      <div className="carousel rounded-box gap-8 bg-black">
+      <div className="carousel rounded-box gap-8 bg-grey">
         {images2.map((image, index) => {
           const adjustedIndex = (scrollPosition + index) % images2.length;
           return (
