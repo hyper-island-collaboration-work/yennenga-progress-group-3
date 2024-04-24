@@ -1,13 +1,10 @@
-import NavBar from "./menu/NavBar";
-import Hero from "./components/heroSection.jsx/Hero";
-import OurMethods from "./components/methodsSection/OurMethods";
+import HomePage from "./pages/homePage/HomePage";
+
 
 function App() {
   return (
     <>
-      <NavBar />
-      <Hero />
-      <OurMethods />
+    <HomePage/>
     </>
   );
 }
