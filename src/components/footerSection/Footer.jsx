@@ -6,10 +6,10 @@ import footer90KontoLogo from "../../../public/images/90_konto_logo_neg 1.png"
 function Footer() {
    return (
      <footer
-       className="bg-fixed bg-cover bg-center bg-no-repeat bg-gray-200"
+       className="bg-fixed bg-cover bg-center bg-no-repeat bg-gray-200 relative w-full top-[1500px]"
        style={{ backgroundImage: `url(${footerBackground})` }}
      >
-       <div className="container flex flex-col justify-between md:flex-row pl-20 pt-12 xl:pr-40 font-arial text-base font-normal text-gray-200">
+       <div className="container flex flex-col justify-between md:flex-row pl-20 pt-12 xl:pr-40 font-arial text-base font-normal text-light-gray">
          <div className="flex flex-col md:w-1/3">
            <img
              src={footerLogo}
