@@ -5,6 +5,7 @@ import Footer from "../../components/footerSection/Footer"
 import SocialMedia from "../../components/footerSection/SocialMedia"
 import Partner from "../../components/partnersSection/Partner";
 import WhistleBlowing from "../../components/WhistleBlowing"
+import RecentNews from "../../components/newsSection/RecentNews";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Navbar />
       <Header />
       <OurMethods />
+      <RecentNews />
       <Partner />
       <WhistleBlowing />
       <Footer />

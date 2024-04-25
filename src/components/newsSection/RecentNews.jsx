@@ -46,7 +46,7 @@ export default function RecentNews() {
 
   return (
     <section
-      className="h-[calc(100vh - 20rem)] relative w-full pb-20"
+      className="h-[calc(100vh - 20rem)] relative w-full top-[800px] pb-20"
       style={{
         backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets/TEMP/98a134c5deae1c20c5f944b85b133362bf9408906cc44b6012fb224f29b3a65b?')`,
         backgroundSize: "cover",
@@ -66,18 +66,21 @@ export default function RecentNews() {
             size={40}
           />
           <div
-            className="flex flex-row gap-6 px-8 overflow-x-auto scroll-smooth"
+            className="flex flex-row gap-6 overflow-x-auto scroll-smooth px-8"
             id={castSliderId}
           >
             {newsPosts.map((post) => (
-              <div key={post.sys.id} className="flex w-[200px] flex-col flex-shrink-0">
+              <div
+                key={post.sys.id}
+                className="flex w-[200px] flex-shrink-0 flex-col"
+              >
                 <img
                   loading="lazy"
                   src={post.fields.newsImage.fields.file.url}
                   alt={post.fields.newsTitle}
                   className="h-[200px] rounded-t-2xl object-cover"
                 />
-                <div className="h-[100px] rounded-b-2xl bg-white px-4 pb-2 pt-3 text-center">
+                <div className="bg-white h-[100px] rounded-b-2xl px-4 pb-2 pt-3 text-center">
                   {post.fields.newsTitle}
                 </div>
               </div>
