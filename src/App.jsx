@@ -1,14 +1,9 @@
-import Header from "./components/headerSection/Header";
-import Footer from './components/footerSection/Footer';
-import SocialMedia from './components/footerSection/SocialMedia';
-
+import HomePage from "./pages/homePage/HomePage";
 
 function App() {
   return (
     <>
-    <Header />
-    <Footer />
-    <SocialMedia />
+      <HomePage />
     </>
   );
 }
