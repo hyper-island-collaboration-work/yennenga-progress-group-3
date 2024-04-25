@@ -2,7 +2,7 @@ import "./donationForm.css";
 
 export default function DonationForm() {
   return (
-    <form className="donation-form flex w-[440px] flex-col gap-10 justify-between rounded-3xl bg-black bg-opacity-70 px-10 py-20 font-['Arial'] text-lg font-bold leading-10 text-light-gray">
+    <form className="donation-form flex w-[440px] flex-col justify-between gap-10 rounded-3xl bg-black bg-opacity-70 px-10 py-20 font-['Arial'] text-lg font-bold leading-10 text-light-gray">
       <div className="flex gap-2.5">
         <legend>Give as:</legend>
         <label className="custom-radioBtn-round">
@@ -24,7 +24,12 @@ export default function DonationForm() {
           </span>
         </label>
         <label className="custom-radioBtn-big">
-          <input id="montly" type="radio" value="Give monthly" name="donation" />
+          <input
+            id="montly"
+            type="radio"
+            value="Give monthly"
+            name="donation"
+          />
           <span className="checkmark rounded-br-3xl rounded-tr-3xl border-b-2 border-r-2 border-t-2 border-light-gray px-8  py-2.5">
             Give monthly
           </span>
