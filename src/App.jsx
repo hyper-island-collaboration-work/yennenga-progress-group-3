@@ -1,12 +1,10 @@
-import Header from "./components/headerSection/Header";
-import RecentNews from "./components/newsSection/RecentNews";
+import HomePage from "./pages/homePage/HomePage";
 
 
 function App() {
   return (
     <>
-    <Header />
-    <RecentNews />
+      <HomePage />
     </>
   );
 }
