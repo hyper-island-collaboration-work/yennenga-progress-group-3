@@ -42,13 +42,13 @@ function Footer() {
            <p>Our structure</p>
            <p>Our partners projects</p>
          </div>
-         <div className="flex flex-col mb-12 md:w-1/3">
-           <p className="font-bold mb-8">Join us</p>
-           <p>Sida på svenska</p>
-           <p>Donate</p>
-           <p>Share your competence</p>
-           <p>Become a business partner</p>
-         </div>
+         <ul className="flex flex-col mb-12 md:w-1/3"> 
+           <h4 className="font-bold mb-8">Join us</h4>
+           <li><a href="#">Sida på svenska</a></li>
+           <li><a href="#">Donate</a></li>
+           <li><a href="#">Share your competence</a></li>
+           <li><a href="#">Become a business partner</a></li>
+         </ul>
        </div>
      </footer>
    );
