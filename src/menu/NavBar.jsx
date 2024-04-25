@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import { useEffect, useState } from "react";
 import useScrollListener from "../hooks/useScrollListener/useScrollListener";
@@ -52,9 +53,9 @@ export default function NavBar() {
       className={`nabvar ${navClassList.join(" ")} sticky z-10 mt-20 flex h-24 w-full items-center justify-between gap-96 bg-black pl-6 pr-14 font-['Arial'] text-lg font-normal text-light-gray transition delay-150 ease-in-out`}
     >
       <div className="navbar-logo">
-        <a href="#">
+        <NavLink to="/" aria-label="Navigate to the Home Page">
           <img src="/images/yp_logo_brown.svg" alt="Yennenga Progress Logo" />
-        </a>
+        </NavLink>
       </div>
       <ul className="navbar-list flex h-full items-center justify-center gap-12">
         {dropdownItems.map((menu) => (
@@ -67,14 +68,14 @@ export default function NavBar() {
           </li>
         ))}
         <li className="list-item">
-          <a className="list-link" href="#">
+          <NavLink to="/News" className="list-link"  >
             News
-          </a>
+          </NavLink>
         </li>
         <li className="list-item">
-          <a className="list-link" href="#">
+          <NavLink className="list-link" to="#">
             Calendar
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>

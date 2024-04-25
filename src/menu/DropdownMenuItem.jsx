@@ -1,11 +1,12 @@
 import { Menu } from "@headlessui/react";
+import { NavLink } from "react-router-dom";
 
-export default function DropdownMenuItem({ children }) {
+export default function DropdownMenuItem({ children, link }) {
   return (
     <Menu.Item className="text-xs">
-      <a href="#" className="block py-2">
+      <NavLink to={`/${link}`} className="block py-2">
         {children}
-      </a>
+      </NavLink>
     </Menu.Item>
   );
 }
