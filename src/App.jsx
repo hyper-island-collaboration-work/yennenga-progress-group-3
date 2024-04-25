@@ -1,16 +1,13 @@
-import WhistleBlowing from "./components/WhistleBlowing";
-import Hero from "./components/heroSection.jsx/Hero";
-import OurMethods from "./components/methodsSection/OurMethods";
-import Partner from "./components/partnersSection/Partner";
+
+import HomePage from "./pages/homePage/HomePage";
 
 
 function App() {
   return (
     <>
-      <Hero />
-      <OurMethods/>
-      <Partner/>
-      <WhistleBlowing/>
+
+      <HomePage />
+
     </>
   );
 }
