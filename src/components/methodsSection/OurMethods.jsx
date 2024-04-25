@@ -20,9 +20,11 @@ export default function OurMethods() {
   ];
 
   return (
-    <section className="text-center section-method flex flex-col items-center px-4 py-20 gap-10">
+    <section className="section-method relative top-[700px] flex flex-col items-center gap-10 px-4 text-center">
       <div>
-        <h2 className="text-black text-5xl font-bold font-['Apple SD Gothic Neo']">Our method</h2>
+        <h2 className="font-['Apple SD Gothic Neo'] text-5xl font-semibold text-black">
+          Our method
+        </h2>
       </div>
       <div className="flex gap-6">
         {methodItems.map(({ image, heading, text }) => (
