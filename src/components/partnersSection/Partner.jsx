@@ -106,7 +106,11 @@ const Partner = () => {
   }, [isPaused]);
 
   return (
+  
+
+   
     <div
+    
       className="relative bg-grey-100"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
