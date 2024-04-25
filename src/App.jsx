@@ -21,21 +21,21 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/Become a member" element={<BecomeMemberPage />} />
+        <Route path="/BecomeAMember" element={<BecomeMemberPage />} />
         <Route path="/Donation" element={<DonationPage />} />
-        <Route path="/School sponsor" element={<SchoolSponsorPage />} />
-        <Route path="/Start your own fund" element={<EngageYourselfPage />} />
+        <Route path="/SchoolSponsor" element={<SchoolSponsorPage />} />
+        <Route path="/StartYourOwnFund" element={<EngageYourselfPage />} />
         <Route path="/FAQ" element={<FAQPage />} />
         <Route path="/News" element={<NewsPage />} />
-        <Route path="/Our socials" element={<OurSocialsPage />} />
+        <Route path="/OurSocials" element={<OurSocialsPage />} />
         <Route path="/PartnershipPage" element={<PartnershipPage />} />
-        <Route path="/Payment page card" element={<PaymentPage />} />
+        <Route path="/PaymentPageCard" element={<PaymentPage />} />
         <Route path="/Education" element={<EducationPage />} />
         <Route path="/Preschool" element={<PreschoolPage />} />
-        <Route path="/UN Goals" element={<UNGoalsPage />} />
-        <Route path="/Share your skill" element={<ShareSkillsPage />} />
+        <Route path="/UNGoals" element={<UNGoalsPage />} />
+        <Route path="/ShareYourSkill" element={<ShareSkillsPage />} />
         <Route path="/Whistleblowing" element={<WhistleblowingPage />} />
-        <Route path="/Who Yennenga Progress are" element={<WhoIsPage />} />
+        <Route path="/WhoYennengaProgressAre" element={<WhoIsPage />} />
       </Routes>
     </Router>
   );

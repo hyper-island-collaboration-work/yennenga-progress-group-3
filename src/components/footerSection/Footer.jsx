@@ -2,6 +2,7 @@ import React from "react";
 import footerBackground from "../../../public/images/Footer_background.webp";
 import footerLogo from "../../../public/images/yp_logo_white.svg";
 import footer90KontoLogo from "../../../public/images/90_konto_logo_neg 1.png";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -13,13 +14,13 @@ function Footer() {
         <div className="flex flex-col md:w-1/3">
           <ul>
             <li>
-              <a href="#">
+              <NavLink to="/">
                 <img
                   className="mb-8 w-fit"
                   src={footerLogo}
                   alt="Yennenga Progress Logo"
                 />
-              </a>
+              </NavLink>
             </li>
             <address>
               <li>
@@ -64,41 +65,41 @@ function Footer() {
         <div className="flex flex-col md:w-1/3">
           <ul className="space-y-3">
             <li className="mb-8 font-bold hover:underline">
-              <a href="#">Our method</a>
+              <NavLink to="#">Our method</NavLink>
             </li>
             <li className="hover:underline">
-              <a href="#">About us</a>
+              <NavLink to="/WhoYennengaProgressAre">About us</NavLink>
             </li>
             <li className="hover:underline">
-              <a href="#">News section</a>
+              <NavLink to="/News">News section</NavLink>
             </li>
             <li className="hover:underline">
-              <a href="#">Current projects</a>
+              <NavLink to="/Education">Current projects</NavLink>
             </li>
             <li className="hover:underline">
-              <a href="#">Our structure</a>
+              <NavLink to="#">Our structure</NavLink>
             </li>
             <li className="hover:underline">
-              <a href="#">Our partners projects</a>
+              <NavLink to="#">Our partners projects</NavLink>
             </li>
           </ul>
         </div>
         <div className="flex flex-col md:w-1/3">
           <ul className="space-y-3">
             <li className="mb-8 font-bold hover:underline">
-              <a href="#">Join us</a>
+              <NavLink to="/BecomeAMember">Join us</NavLink>
             </li>
             <li className="hover:underline">
-              <a href="#">Sida på svenska</a>
+              <NavLink to="#">Sida på svenska</NavLink>
             </li>
             <li className="hover:underline">
-              <a href="#">Donate</a>
+              <NavLink to="/Donation">Donate</NavLink>
             </li>
             <li className="hover:underline">
-              <a href="#">Share your competence</a>
+              <NavLink to="/ShareYourSkill">Share your competence</NavLink>
             </li>
             <li className="hover:underline">
-              <a href="#">Become a business partner</a>
+              <NavLink to="#">Become a business partner</NavLink>
             </li>
           </ul>
         </div>
