@@ -13,7 +13,7 @@ export default function HomePage() {
       <Navbar />
       <Header />
       <OurMethods />
-      {/* <RecentNews /> */}
+       <RecentNews /> 
       <Partner />
       <WhistleBlowing />
       <Footer />
