@@ -1,0 +1,3 @@
+.newsSection-scrollbar::-webkit-scrollbar {
+    background: transparent;
+}

@@ -11,6 +11,7 @@ export default {
       "umber": "#AF6B48",
       "burkina-blue": "#215ECF",
       "dark-blue": "#294C9C",
+      "white": "#FFFFFF"
     },
     extend: {},
   },
