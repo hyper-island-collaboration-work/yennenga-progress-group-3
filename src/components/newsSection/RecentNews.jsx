@@ -70,7 +70,7 @@ export default function RecentNews() {
 
   return (
     <section
-      className="h-[calc(100vh - 20rem)] relative top-[800px] w-full pb-20"
+      className="h-[calc(100vh - 20rem)] relative top-[800px] w-full pb-32"
       style={{
         backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets/TEMP/98a134c5deae1c20c5f944b85b133362bf9408906cc44b6012fb224f29b3a65b?')`,
         backgroundSize: "cover",
@@ -78,9 +78,13 @@ export default function RecentNews() {
       }}
     >
       <div className="flex flex-col">
-        <h1 className="font-['Apple SD Gothic Neo'] p-8 text-4xl font-bold capitalize text-black">
-          Recent News
-        </h1>
+        <div className="flex flex-row justify-between px-20 py-16">
+          <h1 className="font-['Apple SD Gothic Neo'] text-5xl font-bold capitalize text-black">
+            Recent News
+          </h1>
+          <button>Button for more news goes here</button>
+        </div>
+
         <div className=" relative">
           <IoIosArrowDropleftCircle
             onClick={() => {
@@ -90,13 +94,13 @@ export default function RecentNews() {
             size={40}
           />
           <div
-            className="newsSection-scrollbar flex flex-row gap-6 overflow-x-scroll scroll-smooth px-8"
+            className="newsSection-scrollbar flex flex-row gap-6 overflow-x-scroll scroll-smooth px-20 drop-shadow-lg"
             id={castSliderId}
           >
             {newsPosts.map((post) => (
               <div
                 key={post.sys.id}
-                className="relative flex w-[200px] flex-shrink-0 flex-col"
+                className="relative flex w-64 flex-shrink-0 flex-col"
               >
                 {post.fields.imageFocalPoint?.fields?.image?.fields?.file
                   ?.url && (
@@ -116,9 +120,11 @@ export default function RecentNews() {
                     }}
                   />
                 )}
-                <div className="bg-white h-[120px] rounded-b-2xl px-4 pb-2 pt-3 text-black mb-4">
-                  <p className="text-light-gray+">{formatDate(post.fields.createdDate)}</p>
-                  <p className="font-bold">{post.fields.newsTitle}</p>
+                <div className="bg-white mb-4 h-52 rounded-b-2xl px-4 pb-2 pt-3 text-black">
+                  <p className="text-xl text-light-gray+">
+                    {formatDate(post.fields.createdDate)}
+                  </p>
+                  <p className="text-2xl font-bold">{post.fields.newsTitle}</p>
                 </div>
               </div>
             ))}
