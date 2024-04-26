@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function WhistleBlowing() {
   return (
     <div
-      className="bg-sand absolute top-[2600px] flex h-full w-full items-center justify-center"
+      className="bg-sand absolute top-[3000px] flex h-full w-full items-center justify-center z-[-1]"
       style={{ height: "600px" }}
     >
       <div className="relative mx-auto max-w-lg p-6">
