@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { createClient } from "contentful";
-import News from "./News.jsx";
+import * as contentful from "contentful";
+import ImageCropper from "./ImageCropper";
 import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
@@ -8,22 +9,27 @@ import {
 
 export default function RecentNews() {
   const [newsPosts, setNewsPosts] = useState([]);
-  const client = createClient({
+  const [imageURL, setImageURL] = useState(null);
+  const [imageX, setImageX] = useState(null);
+  const [imageY, setImageY] = useState(null);
+  const [imageWidth, setImageWidth] = useState(null);
+  const [imageHeight, setImageHeight] = useState(null);
+
+  const client = contentful.createClient({
     space: "drwwam889eac",
-    accessToken: "MWAI584-9KUuKgtWH_wlF8itCec9NhvimLeF91vHbr4",
+    environment: "master", // defaults to 'master' if not set
+    accessToken: "i7gTUFaXecTvXpkduPoRfWqzE7F7L9ZvyDf6xSv7BVY",
   });
 
   useEffect(() => {
-    const getAllEntries = async () => {
-      try {
-        const response = await client.getEntries();
-        console.log(response);
+    client
+      .getEntries({
+        content_type: "news",
+      })
+      .then((response) => {
         setNewsPosts(response.items);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    getAllEntries();
+        console.log(response.items);
+      });
   }, []);
 
   const [castSliderId] = useState(
@@ -46,7 +52,7 @@ export default function RecentNews() {
 
   return (
     <section
-      className="h-[calc(100vh - 20rem)] relative w-full top-[800px] pb-20"
+      className="h-[calc(100vh - 20rem)] relative top-[800px] w-full pb-20"
       style={{
         backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets/TEMP/98a134c5deae1c20c5f944b85b133362bf9408906cc44b6012fb224f29b3a65b?')`,
         backgroundSize: "cover",
@@ -74,13 +80,21 @@ export default function RecentNews() {
                 key={post.sys.id}
                 className="flex w-[200px] flex-shrink-0 flex-col"
               >
-                <img
-                  loading="lazy"
-                  src={post.fields.newsImage.fields.file.url}
-                  alt={post.fields.newsTitle}
-                  className="h-[200px] rounded-t-2xl object-cover"
-                />
-                <div className="bg-white h-[100px] rounded-b-2xl px-4 pb-2 pt-3 text-center">
+                {post.fields.imageFocalPoint?.fields?.image?.fields?.file
+                  ?.url && (
+                  <ImageCropper
+                    imageUrl={`https:${post.fields.imageFocalPoint.fields.image.fields.file.url}`}
+                    coordinates={{
+                      x: post.fields.imageFocalPoint.fields.focalPoint.focalPoint.x,
+                      y: post.fields.imageFocalPoint.fields.focalPoint.focalPoint.y,
+                      width: post.fields.imageFocalPoint.fields.image.fields.file
+                      .details.image.width,
+                      height: post.fields.imageFocalPoint.fields.image.fields.file.details
+                      .image.height,
+                    }}
+                  />
+                )}
+                <div className="bg-white h-[100px] rounded-b-2xl px-4 pb-2 pt-3 text-center text-black">
                   {post.fields.newsTitle}
                 </div>
               </div>
@@ -98,48 +112,3 @@ export default function RecentNews() {
     </section>
   );
 }
-
-/*
-
-return (
-    <div
-      className="h-[calc(100vh - 20rem)] relative w-full pb-20"
-      style={{
-        backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets/TEMP/98a134c5deae1c20c5f944b85b133362bf9408906cc44b6012fb224f29b3a65b?')`,
-        backgroundSize: "cover",
-        backgroundPosition: "bottom",
-      }}
-    >
-      <div className="flex flex-col">
-        <h1 className="font-['Apple SD Gothic Neo'] p-8 text-4xl font-bold capitalize text-black">
-          Recent News
-        </h1>
-        <div className="flex justify-center gap-12 px-8">
-        {visibleNewsPosts.map((post) => (
-              <div key={post.sys.id} className="flex w-[300px] flex-col">
-                <img
-                  loading="lazy"
-                  src={post.fields.newsImage.fields.file.url}
-                  alt={post.fields.newsTitle}
-                  className="h-[200px] rounded-t-2xl object-cover"
-                />
-                <div className="h-16 rounded-b-2xl bg-white px-4 pb-2 pt-3 text-center">
-                  {post.fields.newsTitle}
-                </div>
-              </div>
-            ))}
-        </div>
-        <div className="flex justify-center mt-4">
-          <button onClick={goToPrevSlide} className="mr-2 bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded">
-            Previous
-          </button>
-          <button onClick={goToNextSlide} className="bg-gray-200 hover:bg-gray-300 px-4 py-2 rounded">
-            Next
-          </button>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-*/
