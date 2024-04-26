@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { createClient } from "contentful";
+import "./RecentNews.css";
 import * as contentful from "contentful";
 import ImageCropper from "./ImageCropper";
 import {
@@ -9,11 +9,6 @@ import {
 
 export default function RecentNews() {
   const [newsPosts, setNewsPosts] = useState([]);
-  const [imageURL, setImageURL] = useState(null);
-  const [imageX, setImageX] = useState(null);
-  const [imageY, setImageY] = useState(null);
-  const [imageWidth, setImageWidth] = useState(null);
-  const [imageHeight, setImageHeight] = useState(null);
 
   const client = contentful.createClient({
     space: "drwwam889eac",
@@ -31,6 +26,29 @@ export default function RecentNews() {
         console.log(response.items);
       });
   }, []);
+
+  function formatDate(dateString) {
+    const months = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+
+    const date = new Date(dateString);
+    const day = date.getDate();
+    const month = months[date.getMonth()];
+
+    return `${day} ${month}`;
+  }
 
   const [castSliderId] = useState(
     `slider-${Math.random().toString(36).substring(7)}`,
@@ -59,7 +77,7 @@ export default function RecentNews() {
         backgroundPosition: "bottom",
       }}
     >
-      <div className="fllex flex-col">
+      <div className="flex flex-col">
         <h1 className="font-['Apple SD Gothic Neo'] p-8 text-4xl font-bold capitalize text-black">
           Recent News
         </h1>
@@ -72,30 +90,35 @@ export default function RecentNews() {
             size={40}
           />
           <div
-            className="flex flex-row gap-6 overflow-x-auto scroll-smooth px-8"
+            className="newsSection-scrollbar flex flex-row gap-6 overflow-x-scroll scroll-smooth px-8"
             id={castSliderId}
           >
             {newsPosts.map((post) => (
               <div
                 key={post.sys.id}
-                className="flex w-[200px] flex-shrink-0 flex-col"
+                className="relative flex w-[200px] flex-shrink-0 flex-col"
               >
                 {post.fields.imageFocalPoint?.fields?.image?.fields?.file
                   ?.url && (
                   <ImageCropper
                     imageUrl={`https:${post.fields.imageFocalPoint.fields.image.fields.file.url}`}
                     coordinates={{
-                      x: post.fields.imageFocalPoint.fields.focalPoint.focalPoint.x,
-                      y: post.fields.imageFocalPoint.fields.focalPoint.focalPoint.y,
-                      width: post.fields.imageFocalPoint.fields.image.fields.file
-                      .details.image.width,
-                      height: post.fields.imageFocalPoint.fields.image.fields.file.details
-                      .image.height,
+                      x: post.fields.imageFocalPoint.fields.focalPoint
+                        .focalPoint.x,
+                      y: post.fields.imageFocalPoint.fields.focalPoint
+                        .focalPoint.y,
+                      width:
+                        post.fields.imageFocalPoint.fields.image.fields.file
+                          .details.image.width,
+                      height:
+                        post.fields.imageFocalPoint.fields.image.fields.file
+                          .details.image.height,
                     }}
                   />
                 )}
-                <div className="bg-white h-[100px] rounded-b-2xl px-4 pb-2 pt-3 text-center text-black">
-                  {post.fields.newsTitle}
+                <div className="bg-white h-[120px] rounded-b-2xl px-4 pb-2 pt-3 text-black mb-4">
+                  <p className="text-light-gray+">{formatDate(post.fields.createdDate)}</p>
+                  <p className="font-bold">{post.fields.newsTitle}</p>
                 </div>
               </div>
             ))}
