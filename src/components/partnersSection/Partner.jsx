@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 import {
   logo1,
@@ -99,7 +99,7 @@ const Partner = () => {
       if (!isPaused) {
         setScrollPosition((prevPosition) => prevPosition + 1);
       }
-    }, 600); // Adjust the duration (in milliseconds) to control the speed of the scrolling
+    }, 500); // Adjust the duration (in milliseconds) to control the speed of the scrolling
 
     return () => clearInterval(interval);
   }, [isPaused]);
@@ -110,28 +110,42 @@ const Partner = () => {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      <div className="carousel rounded-box bg-grey gap-8">
+      <div className="carousel rounded-box gap-8 bg-grey">
         {images1.map((image, index) => {
           const adjustedIndex = (scrollPosition + index) % images1.length;
           return (
-            <div key={index} className="carousel-item">
-              <img
+            <div key={index} className="carousel-item flex flex-col gap-[95px] border-dotted	 border-2" >
+             <div className='w-[200px] h-[200px] m-4'> 
+               <img
                 src={images1[adjustedIndex]}
                 alt={`Slide ${adjustedIndex + 1}`}
               />
+              </div>
+              <div className=' w-[200px] h-[200px] bg-burkina-blue m-4 rounded-3xl flex justify-center items-center' >
+            <button className="bg-sand w-44 h-12 rounded-[100px]"> Partnership  </button>
+            
+            
+              </div>
             </div>
           );
         })}
       </div>
-      <div className="carousel rounded-box bg-grey gap-8">
+      <div className="carousel rounded-box gap-8 bg-grey">
         {images2.map((image, index) => {
           const adjustedIndex = (scrollPosition + index) % images2.length;
           return (
-            <div key={index} className="carousel-item">
-              <img
+            <div key={index} className="carousel-item flex flex-col gap-[95px] border-dotted	 border-2" >
+             <div className='w-[200px] h-[200px] m-4'> 
+               <img
                 src={images2[adjustedIndex]}
                 alt={`Slide ${adjustedIndex + 1}`}
               />
+              </div>
+              <div className=' w-[200px] h-[200px] bg-burkina-blue m-4 rounded-3xl flex justify-center items-center' >
+            <button className="bg-sand w-44 h-12 rounded-[100px]"> Partnership  </button>
+            
+            
+              </div>
             </div>
           );
         })}
