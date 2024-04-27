@@ -6,6 +6,7 @@ import {
   IoIosArrowDropleftCircle,
   IoIosArrowDroprightCircle,
 } from "react-icons/io";
+import MoreButton from "../MoreButton";
 
 export default function RecentNews() {
   const [newsPosts, setNewsPosts] = useState([]);
@@ -78,11 +79,13 @@ export default function RecentNews() {
       }}
     >
       <div className="flex flex-col">
-        <div className="flex flex-row justify-between px-20 py-16">
+        <div className="flex justify-between px-20 py-16 items-center">
           <h1 className="font-['Apple SD Gothic Neo'] text-5xl font-bold capitalize text-black">
             Recent News
           </h1>
-          <button>Button for more news goes here</button>
+          <div>
+            <MoreButton link={"News"} text={"More news"}/>
+          </div>
         </div>
 
         <div className=" relative">
