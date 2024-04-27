@@ -10,12 +10,10 @@ function WhistleBlowing() {
     >
       <div className="relative mx-auto max-w-lg p-6">
         <NavLink to="/Whistleblowing">
-          <button
-            className="whistlenlowing-btn text-white dark-blue relative overflow-hidden rounded-full bg-black px-16 py-8 font-bold transition duration-300 hover:border hover:bg-dark-blue"
-            style={{ width: "500px", height: "136px" }}
-          >
-            <div className="flex h-full items-center justify-center gap-4">
-              <div className="WhistleBlowing text-white font-['Apple SD Gothic Neo'] text-4xl">
+          <button  className="whistlenlowing-btn w-100 h-32  justify-center items-center inline-flex bg-black gap-8  relative overflow-hidden rounded-full  px-16 py-8 font-bold transition duration-300 hover:border hover:bg-dark-blue">
+
+            <div className="flex  items-center  gap-4 ">
+              <div className="WhistleBlowing text-zinc-100 font-bold  font-['Apple SD Gothic Neo'] text-4xl ">
                 Whistle blowing
               </div>
               <img
