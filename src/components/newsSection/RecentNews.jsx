@@ -70,7 +70,7 @@ export default function RecentNews() {
 
   return (
     <section
-      className="h-[calc(100vh - 20rem)] relative top-[800px] w-full pb-32"
+      className="h-[calc(100vh - 20rem)] pb-32"
       style={{
         backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets/TEMP/98a134c5deae1c20c5f944b85b133362bf9408906cc44b6012fb224f29b3a65b?')`,
         backgroundSize: "cover",
@@ -120,7 +120,7 @@ export default function RecentNews() {
                     }}
                   />
                 )}
-                <div className="bg-white mb-4 h-52 rounded-b-2xl px-4 pb-2 pt-3 text-black">
+                <div className="mb-4 h-52 rounded-b-2xl bg-white px-4 pb-2 pt-3 text-black">
                   <p className="text-xl text-light-gray+">
                     {formatDate(post.fields.createdDate)}
                   </p>

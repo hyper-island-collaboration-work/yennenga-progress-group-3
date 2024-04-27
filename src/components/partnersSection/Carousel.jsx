@@ -106,11 +106,10 @@ const Partner = () => {
 
   return (
     <div
-      className="bg-grey-100 relative  top-[900px]"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      <div className="carousel rounded-box bg-grey gap-8">
+      <div className="carousel gap-8 rounded-box">
         {images1.map((image, index) => {
           const adjustedIndex = (scrollPosition + index) % images1.length;
           return (
@@ -123,7 +122,7 @@ const Partner = () => {
           );
         })}
       </div>
-      <div className="carousel rounded-box bg-grey gap-8">
+      <div className="carousel gap-8 rounded-box">
         {images2.map((image, index) => {
           const adjustedIndex = (scrollPosition + index) % images2.length;
           return (

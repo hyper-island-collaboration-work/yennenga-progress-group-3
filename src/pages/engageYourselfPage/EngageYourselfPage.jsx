@@ -1,17 +1,20 @@
 import WhistleBlowing from "../../components/WhistleBlowing";
 import Footer from "../../components/footerSection/Footer";
-import SocialMedia from "../../components/footerSection/SocialMedia";
 import Header from "../../components/headerSection/Header";
 import NavBar from "../../menu/NavBar";
+import MainImage from "/images/Fund-bg.png";
 
 export default function EngageYourselfPage() {
   return (
     <>
       <NavBar />
-      <Header />
+      <Header
+        bgImage={MainImage}
+        heading={"Start your own fund"}
+        styles={"pt-60 pb-64 px-64 flex justify-center"}
+      />
       <WhistleBlowing />
       <Footer />
-      <SocialMedia />
     </>
   );
 }
