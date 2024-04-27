@@ -3,7 +3,6 @@ import OurMethods from "../../components/methodsSection/OurMethods";
 import Navbar from "../../menu/NavBar";
 import Footer from "../../components/footerSection/Footer";
 import Partners from "../../components/partnersSection/Partners";
-import WhistleBlowing from "../../components/WhistleBlowing";
 import RecentNews from "../../components/newsSection/RecentNews";
 import MainImage from "/images/Landing-bg.png";
 import DonationForm from "../../components/donation form/DonationForm";
@@ -22,7 +21,6 @@ export default function HomePage() {
       <OurMethods />
       <RecentNews />
       <Partners />
-      <WhistleBlowing />
       <Footer />
     </>
   );

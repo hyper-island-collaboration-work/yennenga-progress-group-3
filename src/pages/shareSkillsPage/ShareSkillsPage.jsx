@@ -1,4 +1,3 @@
-import WhistleBlowing from "../../components/WhistleBlowing";
 import Footer from "../../components/footerSection/Footer";
 import Header from "../../components/headerSection/Header";
 import NavBar from "../../menu/NavBar";
@@ -13,7 +12,6 @@ export default function ShareSkillsPage() {
         heading={"Share your skill"}
         styles={"pt-60 pb-64 flex justify-center"}
       />
-      <WhistleBlowing />
       <Footer />
     </>
   );
