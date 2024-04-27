@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 import {
   logo1,
@@ -85,70 +85,109 @@ const images2 = [
 const Partner = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [hoverIndex1, setHoverIndex1] = useState(null); // Track hover for the first carousel
+  const [hoverIndex2, setHoverIndex2] = useState(null); // Track hover for the second carousel
 
   useEffect(() => {
-    const handleMouseEnter = () => {
-      setIsPaused(true);
-    };
-
-    const handleMouseLeave = () => {
-      setIsPaused(false);
-    };
-
     const interval = setInterval(() => {
       if (!isPaused) {
-        setScrollPosition((prevPosition) => prevPosition + 1);
+        setScrollPosition(
+          (prevPosition) => (prevPosition + 1) % images1.length,
+        );
       }
-    }, 500); // Adjust the duration (in milliseconds) to control the speed of the scrolling
+    }, 500);
 
     return () => clearInterval(interval);
-  }, [isPaused]);
+  }, [isPaused, images1.length]);
+
+  const handleMouseEnter1 = (index) => {
+    setIsPaused(true);
+    setHoverIndex1(index);
+  };
+
+  const handleMouseLeave1 = () => {
+    setIsPaused(false);
+    setHoverIndex1(null);
+  };
+
+  const handleMouseEnter2 = (index) => {
+    setIsPaused(true);
+    setHoverIndex2(index);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsPaused(false);
+    setHoverIndex2(null);
+  };
+
+  const renderCarouselItem = (
+    image,
+    index,
+    imagesArray,
+    hoverIndex,
+    handleMouseEnter,
+    handleMouseLeave,
+  ) => {
+    const adjustedIndex = (scrollPosition + index) % imagesArray.length;
+    const isHovered = index === hoverIndex;
+
+    return (
+      <div
+        key={index}
+        className="carousel-item flex flex-col gap-10 border-2 border-dotted"
+        onMouseEnter={() => handleMouseEnter(index)}
+        onMouseLeave={handleMouseLeave}
+      >
+        {!isHovered && (
+          <div className="m-4 block h-[200px] w-[200px]">
+            <img
+              src={imagesArray[adjustedIndex]}
+              alt={`Slide ${adjustedIndex + 1}`}
+            />
+          </div>
+        )}
+        {isHovered && (
+          <div className="m-4 flex h-[200px] w-[200px] items-center justify-center rounded-3xl bg-burkina-blue">
+            <button className="h-12 w-44 rounded-[100px] bg-sand">
+              Partnership
+            </button>
+          </div>
+        )}
+      </div>
+    );
+  };
 
   return (
-    <div
-      className="bg-grey-100 relative  top-[900px]"
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
-    >
-      <div className="carousel rounded-box gap-8 bg-grey">
-        {images1.map((image, index) => {
-          const adjustedIndex = (scrollPosition + index) % images1.length;
-          return (
-            <div key={index} className="carousel-item flex flex-col gap-[95px] border-dotted	 border-2" >
-             <div className='w-[200px] h-[200px] m-4'> 
-               <img
-                src={images1[adjustedIndex]}
-                alt={`Slide ${adjustedIndex + 1}`}
-              />
-              </div>
-              <div className=' w-[200px] h-[200px] bg-burkina-blue m-4 rounded-3xl flex justify-center items-center' >
-            <button className="bg-sand w-44 h-12 rounded-[100px]"> Partnership  </button>
-            
-            
-              </div>
-            </div>
-          );
-        })}
+    <div className="bg-grey-100 relative top-[800px] flex w-full flex-col items-center justify-center gap-8">
+      <div className="bg-grey-100 flex w-[1280px] justify-end gap-80">
+        <h1 className="text-center text-5xl font-semibold">Our Partners</h1>
+        <button className="h-16 w-56 rounded-[40px] bg-black text-3xl  text-white">
+          All partners
+        </button>
       </div>
-      <div className="carousel rounded-box gap-8 bg-grey">
-        {images2.map((image, index) => {
-          const adjustedIndex = (scrollPosition + index) % images2.length;
-          return (
-            <div key={index} className="carousel-item flex flex-col gap-[95px] border-dotted	 border-2" >
-             <div className='w-[200px] h-[200px] m-4'> 
-               <img
-                src={images2[adjustedIndex]}
-                alt={`Slide ${adjustedIndex + 1}`}
-              />
-              </div>
-              <div className=' w-[200px] h-[200px] bg-burkina-blue m-4 rounded-3xl flex justify-center items-center' >
-            <button className="bg-sand w-44 h-12 rounded-[100px]"> Partnership  </button>
-            
-            
-              </div>
-            </div>
-          );
-        })}
+      <div className="bg-grey carousel mx-10 max-w-full gap-7 rounded-box">
+        {images1.map((image, index) =>
+          renderCarouselItem(
+            image,
+            index,
+            images1,
+            hoverIndex1,
+            handleMouseEnter1,
+            handleMouseLeave1,
+          ),
+        )}
+      </div>
+      <div className="bg-grey carousel max-w-full gap-7 rounded-box">
+        {images2.map((image, index) =>
+          renderCarouselItem(
+            image,
+            index,
+            images2,
+            hoverIndex2,
+            handleMouseEnter2,
+            handleMouseLeave2,
+          ),
+        )}
       </div>
     </div>
   );
