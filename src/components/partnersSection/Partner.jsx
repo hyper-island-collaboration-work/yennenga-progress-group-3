@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { RiArrowRightSLine } from 'react-icons/ri';
 
 import {
   logo1,
@@ -134,7 +135,7 @@ const Partner = () => {
     return (
       <div
         key={index}
-        className="carousel-item flex flex-col gap-10 border-2 border-dotted"
+        className="carousel-item flex flex-col gap-10  "
         onMouseEnter={() => handleMouseEnter(index)}
         onMouseLeave={handleMouseLeave}
       >
@@ -147,9 +148,10 @@ const Partner = () => {
           </div>
         )}
         {isHovered && (
-          <div className="m-4 flex h-[200px] w-[200px] items-center justify-center rounded-3xl bg-burkina-blue">
-            <button className="h-12 w-44 rounded-[100px] bg-sand">
+          <div className="m-4 flex w-48 h-48 items-center justify-center rounded-3xl bg-burkina-blue ">
+            <button className="h-12 w-44 rounded-[100px]  border-zinc-100 border-2 justify-center items-center bg-sand inline-flex">
               Partnership
+              <RiArrowRightSLine size={24} />
             </button>
           </div>
         )}
@@ -160,9 +162,10 @@ const Partner = () => {
   return (
     <div className="bg-grey-100 relative top-[800px] flex w-full flex-col items-center justify-center gap-8">
       <div className="bg-grey-100 flex w-[1280px] justify-end gap-80">
-        <h1 className="text-center text-5xl font-semibold">Our Partners</h1>
-        <button className="h-16 w-56 rounded-[40px] bg-black text-3xl  text-white">
-          All partners
+        <h1 className="text-center text-black text-5xl font-semibold font-['Apple SD Gothic Neo']">Our Partners</h1>
+        <button className="h-11 w-44   rounded-3xl justify-center items-center gap-2.4 inline-flex bg-black text-2x1 font-bold font-['Arial']  text-zinc-100 transition duration-300 hover:border hover:bg-dark-blue">
+          All partners 
+          <RiArrowRightSLine size={24} />
         </button>
       </div>
       <div className="bg-grey carousel mx-10 max-w-full gap-7 rounded-box">
