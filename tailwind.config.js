@@ -14,7 +14,6 @@ export default {
       "white": "#FFFFFF",
       "sand": "#D4CEBC",
     },
-    extend: {},
   },
   plugins: [require('daisyui')],
   daisyui: {
