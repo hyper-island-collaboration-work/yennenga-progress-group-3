@@ -13,6 +13,7 @@ export default {
       "dark-blue": "#294C9C",
       "white": "#FFFFFF",
       "sand": "#D4CEBC",
+      "light-green": "#22c55e",
     },
   },
   plugins: [require('daisyui')],
