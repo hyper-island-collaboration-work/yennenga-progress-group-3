@@ -2,7 +2,7 @@
 .custom-radioBtn-round {
   position: relative;
   display: block;
-  padding-left: 30px;
+  padding-left: 2rem;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -22,10 +22,10 @@
 /* Create a custom radio button */
 .custom-radioBtn-round .checkmark {
   position: absolute;
-  top: 6px;
+  top: 0.4rem;
   left: 0;
-  height: 24px;
-  width: 24px;
+  height: 1.5rem;
+  width: 1.5rem;
   background-color: transparent;
   border: 2px #f0f0f0 solid;
   border-radius: 50%;
@@ -38,7 +38,7 @@
 
 /* When the radio button is checked*/
 .custom-radioBtn-round input:checked ~ .checkmark {
-  background-color: #c0c0c0;
+  background-color: transparent;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -55,10 +55,10 @@
 
 /* Style the indicator (dot/circle) */
 .custom-radioBtn-round .checkmark:after {
-  top: 6px;
-  left: 5.5px;
-  width: 10px;
-  height: 10px;
+  top: 5px;
+  left: 5px;
+  width: 0.625rem;
+  height: 0.625rem;
   border-radius: 50%;
   background: #215ecf;
 }

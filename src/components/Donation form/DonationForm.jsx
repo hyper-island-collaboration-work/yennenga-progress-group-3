@@ -2,8 +2,8 @@ import "./donationForm.css";
 
 export default function DonationForm() {
   return (
-    <form className="donation-form flex w-[440px] flex-col justify-between gap-10 rounded-3xl bg-black bg-opacity-70 px-10 py-20 font-['Arial'] text-lg font-bold leading-10 text-light-gray">
-      <div className="flex gap-2.5">
+    <form className="donation-form w-[42.5rem] flex flex-col justify-between gap-10 rounded-3xl bg-black bg-opacity-70 px-10 py-20 font-['Arial'] text-lg font-bold leading-10 text-light-gray">
+      <div className="flex justify-center gap-1.5 ">
         <legend>Give as:</legend>
         <label className="custom-radioBtn-round">
           Private Person
@@ -16,10 +16,10 @@ export default function DonationForm() {
           <span className="checkmark"></span>
         </label>
       </div>
-      <div className="flex justify-center">
+      <div className="flex w-full justify-center">
         <label className="custom-radioBtn-big">
-          <input id="donate" type="radio" value="donate" name="donation" />
-          <span className="checkmark rounded-bl-3xl rounded-tl-3xl border-2 border-light-gray px-14 py-2.5">
+          <input id="donate" type="radio" value="donate" name="donation"/>
+          <span className="checkmark px-14 py-3 rounded-tl-3xl rounded-bl-3xl border-2 border-light-gray">
             Donate
           </span>
         </label>
@@ -30,27 +30,27 @@ export default function DonationForm() {
             value="Give monthly"
             name="donation"
           />
-          <span className="checkmark rounded-br-3xl rounded-tr-3xl border-b-2 border-r-2 border-t-2 border-light-gray px-8  py-2.5">
+          <span className="checkmark px-9 py-3 rounded-tr-3xl rounded-br-3xl border-r-2 border-t-2 border-b-2 border-light-gray">
             Give monthly
           </span>
         </label>
       </div>
       <div className="flex justify-center">
-        <label className="custom-radioBtn-big ">
+        <label className="custom-radioBtn-big">
           <input id="200" type="radio" value="200" name="amount" />
-          <span className="checkmark rounded-bl-3xl rounded-tl-3xl border-2 border-light-gray px-7 py-2.5">
+          <span className="checkmark py-3 px-8 rounded-tl-3xl rounded-bl-3xl border-2 border-light-gray">
             200 kr
           </span>
         </label>
-        <label className="custom-radioBtn-big ">
+        <label className="custom-radioBtn-big">
           <input id="400" type="radio" value="400" name="amount" />
-          <span className="checkmark border-b-2 border-t-2 border-light-gray px-7 py-2.5">
+          <span className="checkmark py-3 px-7 border-t-2 border-b-2 border-light-gray">
             400 kr
           </span>
         </label>
         <label className="custom-radioBtn-big ">
           <input id="400" type="radio" value="400" name="amount" />
-          <span className="checkmark rounded-br-3xl rounded-tr-3xl border-2 border-light-gray px-7  py-2.5">
+          <span className="checkmark py-3 px-8 rounded-tr-3xl rounded-br-3xl border-2 border-light-gray">
             Optional
           </span>
         </label>

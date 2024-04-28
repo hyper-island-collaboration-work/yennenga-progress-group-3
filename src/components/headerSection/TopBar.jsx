@@ -2,11 +2,15 @@ import { NavLink } from "react-router-dom";
 
 export default function TopBar() {
   return (
-    <div className="topbar-container fixed top-0 z-10 flex h-20 w-full items-center justify-between bg-umber px-8 py-4 font-['Arial'] text-lg font-semibold leading-10">
+    <div className="topbar-container fixed top-0 z-10 flex h-20 w-full items-center justify-between bg-umber px-10 py-4 font-['Arial'] text-lg font-semibold leading-10">
       <NavLink to="/Whistleblowing">
         <div className="inline-flex h-10 w-60 items-center justify-center gap-2 rounded-3xl bg-black transition delay-100 ease-in-out hover:bg-dark-blue">
           <button className="WhistleBlowing-btn">Whistle blowing</button>
-          <img src="/vector/whistleIcon.svg" alt="whistle icon" />
+          <img
+            src="/vector/whistleIcon.svg"
+            alt="whistle icon"
+            className="h-[17.8px] w-6"
+          />
         </div>
       </NavLink>
       <NavLink to="/Donation">

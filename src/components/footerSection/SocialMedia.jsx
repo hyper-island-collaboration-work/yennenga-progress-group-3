@@ -3,9 +3,9 @@ import { SocialIcon } from "react-social-icons";
 
 function SocialMedia() {
   return (
-    <div className="relative w-full top-[1500px] pb-10">
-      <p className="mb-6 mt-12 text-center font-arial text-base font-normal">Follow us on</p>
-      <div className="mb-12 flex justify-center gap-12 ">
+    <div className="flex flex-col items-center py-24 gap-9 text-black text-2xl font-normal font-['Arial']">
+      <p>Follow us on</p>
+      <div className="flex justify-center gap-12 ">
         <SocialIcon url="https://www.facebook.com/yennengaprogress" target="_blank" className="mr-4 hover:scale-125 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-amber-600 rounded-full"/>
         <SocialIcon url="https://www.instagram.com/yennengaprogress" target="_blank" className="mr-4 hover:scale-125 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-amber-600 rounded-full"/>
         <SocialIcon url="https://twitter.com/yennengaprogres" target="_blank" className="mr-4 hover:scale-125 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-amber-600 rounded-full"/>

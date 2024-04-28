@@ -5,7 +5,7 @@ import NewsPage from "./pages/newsFlow/NewsPage";
 import PartnershipPage from "./pages/partnershipPage/PartnershipPage";
 import WhistleblowingPage from "./pages/WhistleblowingPage/WhistleblowingPage";
 import PaymentPage from "./pages/paymentPage/PaymentPage";
-import WhoIsPage from "./pages/WhoIsPage/WhoIsPage";
+import WhoIsPage from "./pages/AboutPage/AboutPage";
 import ShareSkillsPage from "./pages/shareSkillsPage/ShareSkillsPage";
 import OurSocialsPage from "./pages/OurSocialsPage//OurSocialsPage";
 import BecomeMemberPage from "./pages/becomeMemberPage/BecomeMemberPage";
@@ -14,7 +14,7 @@ import EngageYourselfPage from "./pages/engageYourselfPage/EngageYourselfPage";
 import FAQPage from "./pages/FAQPage/FAQPage";
 import EducationPage from "./pages/projectsFlow/EducationPage";
 import PreschoolPage from "./pages/projectsFlow/PreschoolPage";
-import UNGoalsPage from "./pages/UNGoalsFlow/UNGoalsPage"
+import UNGoalsPage from "./pages/UNGoalsFlow/UNGoalsPage";
 
 function App() {
   return (
@@ -28,14 +28,14 @@ function App() {
         <Route path="/FAQ" element={<FAQPage />} />
         <Route path="/News" element={<NewsPage />} />
         <Route path="/OurSocials" element={<OurSocialsPage />} />
-        <Route path="/PartnershipPage" element={<PartnershipPage />} />
+        <Route path="/OurPartners" element={<PartnershipPage />} />
         <Route path="/PaymentPageCard" element={<PaymentPage />} />
         <Route path="/Education" element={<EducationPage />} />
         <Route path="/Preschool" element={<PreschoolPage />} />
         <Route path="/UNGoals" element={<UNGoalsPage />} />
         <Route path="/ShareYourSkill" element={<ShareSkillsPage />} />
         <Route path="/Whistleblowing" element={<WhistleblowingPage />} />
-        <Route path="/WhoYennengaProgressAre" element={<WhoIsPage />} />
+        <Route path="/AboutUs" element={<WhoIsPage />} />
       </Routes>
     </Router>
   );

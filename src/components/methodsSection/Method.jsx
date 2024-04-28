@@ -9,7 +9,7 @@ export default function Method({ image, heading, text }) {
           {heading}
         </h3>
       </div>
-      <div className="w-[362px]">
+      <div className="w-96">
         <p className="font-['Arial'] text-lg font-normal leading-loose text-black">
           {text}
         </p>

@@ -20,7 +20,7 @@ export default function OurMethods() {
   ];
 
   return (
-    <section className="section-method relative top-[700px] flex flex-col items-center gap-10 px-4 text-center">
+    <section className="section-method my-24 flex flex-col items-center gap-10 text-center">
       <div>
         <h2 className="font-['Apple SD Gothic Neo'] text-5xl font-semibold text-black">
           Our method

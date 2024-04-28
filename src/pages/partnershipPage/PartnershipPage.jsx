@@ -1,17 +1,18 @@
-import WhistleBlowing from "../../components/WhistleBlowing";
 import Footer from "../../components/footerSection/Footer";
-import SocialMedia from "../../components/footerSection/SocialMedia";
 import Header from "../../components/headerSection/Header";
 import NavBar from "../../menu/NavBar";
+import MainImage from "/images/Partners-bg.png";
 
 export default function PartnershipPage() {
   return (
     <>
       <NavBar />
-      <Header />
-      <WhistleBlowing />
+      <Header
+        bgImage={MainImage}
+        heading={"Our partners"}
+        styles={"pt-60 pb-64 flex justify-center"}
+      />
       <Footer />
-      <SocialMedia />
     </>
   );
 }

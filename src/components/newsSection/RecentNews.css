@@ -1,0 +1,10 @@
+.newsSection-scrollbar::-webkit-scrollbar {
+  background: transparent;
+  height: 12px;
+}
+
+.newsSection-scrollbar::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border-radius: 10px;
+  max-width: 10rem;
+}

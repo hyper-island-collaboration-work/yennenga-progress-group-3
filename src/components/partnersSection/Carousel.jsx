@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { RiArrowRightSLine } from 'react-icons/ri';
+import { RiArrowRightSLine } from "react-icons/ri";
 
 import {
   logo1,
@@ -83,6 +83,7 @@ const images2 = [
   logo36,
   logo37,
 ];
+
 const Partner = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
@@ -148,8 +149,8 @@ const Partner = () => {
           </div>
         )}
         {isHovered && (
-          <div className="m-4 flex w-48 h-48 items-center justify-center rounded-3xl bg-burkina-blue ">
-            <button className="h-12 w-44 rounded-[100px]  border-zinc-100 border-2 justify-center items-center bg-sand inline-flex">
+          <div className="m-4 flex h-48 w-48 items-center justify-center rounded-3xl bg-burkina-blue ">
+            <button className="border-zinc-100 inline-flex h-12  w-44 items-center justify-center rounded-[100px] border-2 bg-sand">
               Partnership
               <RiArrowRightSLine size={24} />
             </button>
@@ -160,15 +161,8 @@ const Partner = () => {
   };
 
   return (
-    <div className="bg-grey-100 relative top-[800px] flex w-full flex-col items-center justify-center gap-8">
-      <div className="bg-grey-100 flex w-[1280px] justify-end gap-80">
-        <h1 className="text-center text-black text-5xl font-semibold font-['Apple SD Gothic Neo']">Our Partners</h1>
-        <button className="h-11 w-44   rounded-3xl justify-center items-center gap-2.4 inline-flex bg-black text-2x1 font-bold font-['Arial']  text-zinc-100 transition duration-300 hover:border hover:bg-dark-blue">
-          All partners 
-          <RiArrowRightSLine size={24} />
-        </button>
-      </div>
-      <div className="bg-grey carousel mx-10 max-w-full gap-7 rounded-box">
+    <>
+      <div className="carousel mx-10 max-w-full gap-7 rounded-box">
         {images1.map((image, index) =>
           renderCarouselItem(
             image,
@@ -180,7 +174,7 @@ const Partner = () => {
           ),
         )}
       </div>
-      <div className="bg-grey carousel max-w-full gap-7 rounded-box">
+      <div className="carousel max-w-full gap-7 rounded-box">
         {images2.map((image, index) =>
           renderCarouselItem(
             image,
@@ -192,7 +186,7 @@ const Partner = () => {
           ),
         )}
       </div>
-    </div>
+    </>
   );
 };
 

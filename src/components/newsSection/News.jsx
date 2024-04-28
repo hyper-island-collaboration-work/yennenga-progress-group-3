@@ -7,7 +7,7 @@ export default function News({ news, image }) {
         alt={news.fields.newsTitle}
         className="h-[200px] rounded-t-2xl object-cover"
       ></img>
-      <div className="bg-white h-16 rounded-b-2xl px-4 pb-2 pt-3 text-center">
+      <div className="h-16 rounded-b-2xl bg-white px-4 pb-2 pt-3 text-center">
         {post.fields.newsTitle}
       </div>
     </div>
