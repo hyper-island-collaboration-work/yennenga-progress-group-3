@@ -16,7 +16,7 @@ export default function HomePage() {
         heading={"Building sustainable societies"}
         styles={"flex items-center gap-10 px-20 pb-24 pt-10"}
       >
-        <DonationForm formWidth={"w-[46.5rem]"}/>
+        <DonationForm formWidth={"w-[46.5rem]"} />
       </Header>
       <OurMethods />
       <RecentNews />

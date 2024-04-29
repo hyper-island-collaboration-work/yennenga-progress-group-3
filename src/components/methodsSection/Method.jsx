@@ -5,14 +5,10 @@ export default function Method({ image, heading, text }) {
         <img src={`/images/${image}`} />
       </div>
       <div>
-        <h3>
-          {heading}
-        </h3>
+        <h3>{heading}</h3>
       </div>
       <div>
-        <p className="text-lg leading-loose px-8">
-          {text}
-        </p>
+        <p className="px-8 text-lg leading-loose">{text}</p>
       </div>
     </div>
   );

@@ -79,12 +79,10 @@ export default function RecentNews() {
       }}
     >
       <div className="flex flex-col">
-        <div className="flex justify-between px-20 py-16 items-center">
-          <h2>
-            Recent News
-          </h2>
+        <div className="flex items-center justify-between px-20 py-16">
+          <h2>Recent News</h2>
           <div>
-            <MoreButton link={"News"} text={"More news"}/>
+            <MoreButton link={"News"} text={"More news"} />
           </div>
         </div>
 

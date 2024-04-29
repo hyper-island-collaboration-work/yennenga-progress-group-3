@@ -62,9 +62,7 @@ export default function SchoolSponsor() {
             </button>
           </div>
           <div className="flex flex-col gap-10">
-            <h3>
-              School Sponsor
-            </h3>
+            <h3>School Sponsor</h3>
             <p className="text-xl leading-loose text-light-green">
               300 SEK/month
             </p>

@@ -4,13 +4,9 @@ export default function Funds({ image, heading, text }) {
       <div>
         <img src={`/images/${image}`} />
       </div>
-      <div className="flex flex-col text-2xl pb-9 px-4 gap-4">
-        <h4>
-          {heading}
-        </h4>
-        <p>
-          {text}
-        </p>
+      <div className="flex flex-col gap-4 px-4 pb-9 text-2xl">
+        <h4>{heading}</h4>
+        <p>{text}</p>
       </div>
     </div>
   );

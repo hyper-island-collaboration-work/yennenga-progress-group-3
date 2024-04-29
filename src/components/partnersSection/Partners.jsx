@@ -6,9 +6,7 @@ export default function Partners() {
     <section className="partners flex flex-col items-center gap-24 py-24">
       <div className="grid w-full grid-cols-3 justify-items-end px-24 ">
         <div className="col-start-2">
-          <h2>
-            Our partners
-          </h2>
+          <h2>Our partners</h2>
         </div>
         <div>
           <MoreButton link={"OurPartners"} text={"All partners"} />
