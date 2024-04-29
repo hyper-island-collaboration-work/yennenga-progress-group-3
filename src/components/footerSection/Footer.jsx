@@ -71,7 +71,7 @@ function Footer() {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/WhoYennengaProgressAre">
+                <NavLink to="/AboutUs">
                   About us
                 </NavLink>
               </li>
@@ -91,7 +91,7 @@ function Footer() {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="#">
+                <NavLink to="/OurPartners">
                   Our partners projects
                 </NavLink>
               </li>
