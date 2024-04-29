@@ -66,59 +66,59 @@ function Footer() {
           <div className="flex gap-32">
             <ul className="flex flex-col gap-2.5 ">
               <li className="mb-2.5 font-bold">
-                <NavLink to="#" target="_blank">
+                <NavLink to="#">
                   Our method
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/WhoYennengaProgressAre" target="_blank">
+                <NavLink to="/WhoYennengaProgressAre">
                   About us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/News" target="_blank">
+                <NavLink to="/News">
                   News section
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Education" target="_blank">
+                <NavLink to="/Education">
                   Current projects
                 </NavLink>
               </li>
               <li>
-                <NavLink to="#" target="_blank">
+                <NavLink to="#">
                   Our structure
                 </NavLink>
               </li>
               <li>
-                <NavLink to="#" target="_blank">
+                <NavLink to="#">
                   Our partners projects
                 </NavLink>
               </li>
             </ul>
             <ul className="flex flex-col gap-2.5">
               <li className="mb-2.5 font-bold ">
-                <NavLink to="/BecomeAMember" target="_blank">
+                <NavLink to="/BecomeAMember">
                   Join us
                 </NavLink>
               </li>
               <li>
-                <NavLink to="#" target="_blank">
+                <NavLink to="#">
                   Sida på svenska
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/Donation" target="_blank">
+                <NavLink to="/Donation">
                   Donate
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/ShareYourSkill" target="_blank">
+                <NavLink to="/ShareYourSkill">
                   Share your competence
                 </NavLink>
               </li>
               <li>
-                <NavLink to="#" target="_blank">
+                <NavLink to="#">
                   Become a business partner
                 </NavLink>
               </li>

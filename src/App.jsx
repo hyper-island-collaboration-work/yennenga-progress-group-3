@@ -5,7 +5,7 @@ import NewsPage from "./pages/newsFlow/NewsPage";
 import PartnershipPage from "./pages/partnershipPage/PartnershipPage";
 import WhistleblowingPage from "./pages/WhistleblowingPage/WhistleblowingPage";
 import PaymentPage from "./pages/paymentPage/PaymentPage";
-import WhoIsPage from "./pages/AboutPage/AboutPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
 import ShareSkillsPage from "./pages/shareSkillsPage/ShareSkillsPage";
 import OurSocialsPage from "./pages/OurSocialsPage//OurSocialsPage";
 import BecomeMemberPage from "./pages/becomeMemberPage/BecomeMemberPage";
@@ -35,7 +35,7 @@ function App() {
         <Route path="/UNGoals" element={<UNGoalsPage />} />
         <Route path="/ShareYourSkill" element={<ShareSkillsPage />} />
         <Route path="/Whistleblowing" element={<WhistleblowingPage />} />
-        <Route path="/AboutUs" element={<WhoIsPage />} />
+        <Route path="/AboutUs" element={<AboutPage />} />
       </Routes>
     </Router>
   );
