@@ -1,7 +1,7 @@
 import Header from "../../components/headerSection/Header";
 import OurMethods from "../../components/methodsSection/OurMethods";
 import Navbar from "../../components/menu/NavBar";
-import Footer from "../../components/footerSection/Footer";
+import BottomBar from "../../components/BottomBar/BottomBar";
 import Partners from "../../components/partnersSection/Partners";
 import RecentNews from "../../components/newsSection/RecentNews";
 import MainImage from "/images/Landing-bg.png";
@@ -21,7 +21,7 @@ export default function HomePage() {
         <OurMethods />
         <RecentNews />
         <Partners />
-        <Footer />
+        <BottomBar />
     </>
   );
 }

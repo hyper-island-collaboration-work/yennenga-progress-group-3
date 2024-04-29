@@ -6,7 +6,6 @@ export default function FastDonation() {
       <div className="flex flex-col gap-10">
         <h2 className="text-burkina-blue">Fast donation</h2>
         <DonationForm formWidth={"w-[28.5rem]"} />
-        <div />
       </div>
       <div className="align-center flex flex-col justify-center text-2xl">
         <span className="font-bold text-burkina-blue">
