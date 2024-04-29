@@ -12,7 +12,7 @@ export default function DonationPage() {
       <Header
         bgImage={MainImage}
         heading={"Donation"}
-        styles={"pt-60 pb-64 flex justify-center"}
+        styles={"pt-52 pb-64 flex justify-center"}
       />
       <FastDonation />
       <OurFunds />

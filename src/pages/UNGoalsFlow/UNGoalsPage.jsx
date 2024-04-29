@@ -10,7 +10,7 @@ export default function UNGoalsPage() {
       <Header
         bgImage={MainImage}
         heading={"UN Goals"}
-        styles={"pt-60 pb-64 flex justify-center"}
+        styles={"pt-52 pb-64 flex justify-center"}
       />
       <Footer />
     </>

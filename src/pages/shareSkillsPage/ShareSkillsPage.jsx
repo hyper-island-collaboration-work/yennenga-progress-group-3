@@ -10,7 +10,7 @@ export default function ShareSkillsPage() {
       <Header
         bgImage={MainImage}
         heading={"Share your skill"}
-        styles={"pt-60 pb-64 flex justify-center"}
+        styles={"pt-52 pb-64 flex justify-center"}
       />
       <Footer />
     </>

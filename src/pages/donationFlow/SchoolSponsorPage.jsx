@@ -12,7 +12,7 @@ export default function SchoolSponsorPage() {
       <Header
         bgImage={MainImage}
         heading={"School sponsor"}
-        styles={"pt-60 pb-64 flex justify-center"}
+        styles={"pt-52 pb-64 flex justify-center"}
       />
       <SchoolSponsor />
       <OurFunds />

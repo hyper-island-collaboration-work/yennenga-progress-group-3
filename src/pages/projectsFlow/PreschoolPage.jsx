@@ -10,7 +10,7 @@ export default function PreschoolPage() {
       <Header
         bgImage={MainImage}
         heading={"Preschool"}
-        styles={"pt-56 pb-64 flex justify-center"}
+        styles={"pt-52 pb-64 flex justify-center"}
       />
       <Footer />
     </>

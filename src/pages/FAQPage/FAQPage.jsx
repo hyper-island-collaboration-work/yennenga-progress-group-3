@@ -10,7 +10,7 @@ export default function FAQPage() {
       <Header
         bgImage={MainImage}
         heading={"FAQ"}
-        styles={"pt-60 pb-64 flex justify-center"}
+        styles={"pt-52 pb-64 flex justify-center"}
       />
       <Footer />
     </>

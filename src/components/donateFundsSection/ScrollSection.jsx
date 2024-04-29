@@ -14,13 +14,13 @@ export default function ScrollSection() {
       image: "rectangle2.png",
       heading: "Teacher salary sponsor",
       text: "1 500 - 3 500 SEK/month",
-      link: "/#",
+      link: "#",
     },
     {
       image: "rectangle2.png",
       heading: "Teacher salary sponsor",
       text: "1 500 - 3 500 SEK/month",
-      link: "/#",
+      link: "#",
     },
   ];
 
@@ -29,19 +29,19 @@ export default function ScrollSection() {
       image: "rectangle3.png",
       heading: "The scholarship fund",
       text: "12 000 SEK raised",
-      link: "/#",
+      link: "#",
     },
     {
       image: "rectangle4.png",
       heading: "The emergency fund",
       text: "12 000 SEK raised",
-      link: "/#",
+      link: "#",
     },
     {
       image: "rectangle6.png",
       heading: "The Clitoris fund",
       text: "12 000 SEK raised",
-      link: "/#",
+      link: "#",
     },
   ];
 

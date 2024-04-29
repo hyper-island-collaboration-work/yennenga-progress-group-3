@@ -4,7 +4,7 @@ import footerLogo from "/images/yp_logo_white.svg";
 import footer90KontoLogo from "/images/90_konto_logo_neg 1.png";
 import { NavLink } from "react-router-dom";
 import SocialMedia from "./SocialMedia";
-import WhistleBlowing from "../../components/WhistleBlowing";
+import WhistleBlowing from "../WhistleBlowingSection";
 
 function Footer() {
   return (

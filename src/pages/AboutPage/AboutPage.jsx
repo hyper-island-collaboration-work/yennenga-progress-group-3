@@ -10,7 +10,7 @@ export default function WhoIsPage() {
       <Header
         bgImage={MainImage}
         heading={"About us"}
-        styles={"pt-60 pb-64 flex justify-center"}
+        styles={"pt-52 pb-64 flex justify-center"}
       />
       <Footer />
     </>

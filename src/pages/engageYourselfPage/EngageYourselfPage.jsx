@@ -10,7 +10,7 @@ export default function EngageYourselfPage() {
       <Header
         bgImage={MainImage}
         heading={"Start your own fund"}
-        styles={"pt-60 pb-64 px-64 flex justify-center"}
+        styles={"pt-52 pb-64 px-64 flex justify-center"}
       />
       <Footer />
     </>

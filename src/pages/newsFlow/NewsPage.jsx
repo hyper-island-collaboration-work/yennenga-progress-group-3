@@ -10,7 +10,7 @@ export default function NewsPage() {
       <Header
         bgImage={MainImage}
         heading={"News"}
-        styles={"pt-60 pb-64 text-center"}
+        styles={"pt-52 pb-64 text-center"}
       />
       <Footer />
     </>
