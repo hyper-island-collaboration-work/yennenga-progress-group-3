@@ -7,7 +7,6 @@ import WhistleblowingPage from "./pages/WhistleblowingPage/WhistleblowingPage";
 import PaymentPage from "./pages/paymentPage/PaymentPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ShareSkillsPage from "./pages/shareSkillsPage/ShareSkillsPage";
-import OurSocialsPage from "./pages/OurSocialsPage//OurSocialsPage";
 import BecomeMemberPage from "./pages/becomeMemberPage/BecomeMemberPage";
 import SchoolSponsorPage from "./pages/donationFlow/SchoolSponsorPage";
 import EngageYourselfPage from "./pages/engageYourselfPage/EngageYourselfPage";
@@ -27,7 +26,6 @@ function App() {
         <Route path="/StartYourOwnFund" element={<EngageYourselfPage />} />
         <Route path="/FAQ" element={<FAQPage />} />
         <Route path="/News" element={<NewsPage />} />
-        <Route path="/OurSocials" element={<OurSocialsPage />} />
         <Route path="/OurPartners" element={<PartnershipPage />} />
         <Route path="/PaymentPageCard" element={<PaymentPage />} />
         <Route path="/Education" element={<EducationPage />} />

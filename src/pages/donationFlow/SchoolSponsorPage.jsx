@@ -1,4 +1,4 @@
-import Footer from "../../components/footerSection/Footer";
+import BottomBar from "../../components/BottomBar/BottomBar";
 import Header from "../../components/headerSection/Header";
 import NavBar from "../../components/menu/NavBar";
 import MainImage from "/images/SchoolSponsor-bg.png";
@@ -16,7 +16,7 @@ export default function SchoolSponsorPage() {
       />
       <SchoolSponsor />
       <OurFunds />
-      <Footer />
+      <BottomBar/>
     </>
   );
 }
