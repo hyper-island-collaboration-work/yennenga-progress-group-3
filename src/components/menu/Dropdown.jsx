@@ -22,7 +22,7 @@ export default function Dropdown({ rootItem, items }) {
       className="relative inline-block h-full text-left"
     >
       <div className="h-full">
-        <Menu.Button className=" inline-flex h-full items-center justify-center gap-2">
+        <Menu.Button className=" inline-flex h-full items-center justify-center gap-2 font-normal">
           {rootItem}
           <img src="/vector/dropdown.svg" alt="dropdown icon" />
         </Menu.Button>

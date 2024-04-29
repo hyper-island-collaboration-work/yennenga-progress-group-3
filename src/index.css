@@ -12,6 +12,8 @@ body {
   background-color: #f0f0f0;
   color: black;
   font-family: Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem; 
 }
 
 h1,
@@ -27,7 +29,7 @@ h6 {
 h1,
 header,
 footer {
-  color: #F6F6F6;
+  color: #f6f6f6;
 }
 
 h2 {
@@ -41,4 +43,30 @@ h3 {
 
 h4 {
   font-size: 1.625rem;
+}
+
+button {
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+.black-btn {
+  background-color: black;
+  border-radius: 1.5rem;
+  height: 3rem;
+  padding-inline: 2.5rem;
+}
+
+.black-btn:hover,
+.blue-btn:hover {
+  background-color: #294c9c;
+  transition: ease-in-out;
+  transition-delay: 100ms;
+}
+
+.blue-btn {
+  background-color: #215ecf;
+  border-radius: 1.5rem;
+  padding-inline: 2rem;
+  height: 3rem;
 }

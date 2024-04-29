@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function MoreButton({ link, text }) {
   return (
     <NavLink to={`/${link}`}>
-      <div className=" flex h-12 w-44 items-center justify-center gap-2.5 rounded-3xl bg-black text-lg font-bold text-light-gray transition delay-100 ease-in-out hover:bg-dark-blue">
+      <div className="black-btn flex items-center justify-center gap-2.5">
         <button>{text}</button>
         <img
           src="/public/vector/opentmoreIcon.svg"
