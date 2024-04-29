@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import { useEffect, useState } from "react";
-import useScrollListener from "../hooks/useScrollListener/useScrollListener";
+import useScrollListener from "../../hooks/useScrollListener/useScrollListener"
 import "./navbar.css";
 
 export default function NavBar() {
@@ -16,10 +16,10 @@ export default function NavBar() {
       ],
     },
     {
-      menuText: "Company/join us",
+      menuText: "Engage yourself",
       dropdownList: [
-        "How can you help",
-        "How it works",
+        "Become a member",
+        "Start your own fund",
         "Share your skill",
         "FAQ",
       ],

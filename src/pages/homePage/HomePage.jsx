@@ -1,6 +1,6 @@
 import Header from "../../components/headerSection/Header";
 import OurMethods from "../../components/methodsSection/OurMethods";
-import Navbar from "../../menu/NavBar";
+import Navbar from "../../components/menu/NavBar";
 import Footer from "../../components/footerSection/Footer";
 import Partners from "../../components/partnersSection/Partners";
 import RecentNews from "../../components/newsSection/RecentNews";

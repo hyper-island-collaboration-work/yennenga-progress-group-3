@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 
+
 export default function TopBar() {
   return (
     <div className="topbar-container fixed top-0 z-10 flex h-20 w-full items-center justify-between bg-umber px-10 py-4 font-['Arial'] text-lg font-semibold leading-10">
@@ -18,6 +19,9 @@ export default function TopBar() {
           <button className="Donate-btn inline-flex justify-center rounded-3xl border-2 border-burkina-blue bg-burkina-blue px-8 py-0.5 transition delay-100 ease-in-out hover:border-dark-blue hover:bg-dark-blue">
             Donate
           </button>
+          <div>
+          </div>
+
         </div>
       </NavLink>
     </div>

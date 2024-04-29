@@ -1,6 +1,6 @@
 import Footer from "../../components/footerSection/Footer";
 import Header from "../../components/headerSection/Header";
-import NavBar from "../../menu/NavBar";
+import NavBar from "../../components/menu/NavBar";
 import MainImage from "/images/SchoolSponsor-bg.png";
 import SchoolSponsor from "../../components/donateFundsSection/SchoolSponsor";
 import OurFunds from "../../components/donateFundsSection/OurFunds";

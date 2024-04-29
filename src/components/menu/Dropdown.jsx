@@ -38,8 +38,8 @@ export default function Dropdown({ rootItem, items }) {
         leaveFrom="transform opacity-100 scale-100"
         leaveTo="transform opacity-0 scale-95"
       >
-        <Menu.Items className="top-18 absolute z-10 w-48 bg-black">
-          <div className="px-4 pb-4 pt-2">
+        <Menu.Items className="absolute z-10 w-48 bg-black rounded-bl-3xl rounded-br-3xl px-4 pt-2 pb-4">
+          <div>
             {items.map((item) => (
               <DropdownMenuItem>{item}</DropdownMenuItem>
             ))}
