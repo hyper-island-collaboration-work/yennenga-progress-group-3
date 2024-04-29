@@ -8,7 +8,7 @@ export default function ScrollButtons() {
           alt="..."
         />
       </div>
-      <div className="relative bottom-40 flex justify-between">
+      <div className="relative bottom-52 flex justify-between">
         <div>
           <button
             type="button"
