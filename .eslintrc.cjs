@@ -1,6 +1,11 @@
+const vitest = require("eslint-plugin-vitest");
+
 module.exports = {
   root: true,
   env: { browser: true, es2020: true },
+  globals: {
+    ...vitest.environments.env.globals,
+  },
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -8,6 +13,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
     "airbnb-base",
     "prettier",
+    'plugin:testing-library/react',
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parserOptions: { ecmaVersion: "latest", sourceType: "module" },
@@ -20,5 +26,8 @@ module.exports = {
       "warn",
       { allowConstantExport: true },
     ],
+    "no-unused-vars": "warn", // warning, not error
+    "vitest/expect-expect": "off", // eliminate distracting red squiggles while writing tests
+    "react/prop-types": "off", // turn off props validation
   },
 };
