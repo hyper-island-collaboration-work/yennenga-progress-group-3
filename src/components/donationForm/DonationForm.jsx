@@ -1,8 +1,8 @@
 import "./donationForm.css";
 
-export default function DonationForm() {
+export default function DonationForm({formWidth}) {
   return (
-    <form className="donation-form w-[42.5rem] flex flex-col justify-between gap-10 rounded-3xl bg-black bg-opacity-70 px-10 py-20 font-['Arial'] text-lg font-bold leading-10 text-light-gray">
+    <form className={`donation-form ${formWidth} flex flex-col justify-between gap-10 rounded-3xl bg-black bg-opacity-70 px-10 py-20 text-lg font-bold leading-10 text-light-gray`}>
       <div className="flex justify-center gap-1.5 ">
         <legend>Give as:</legend>
         <label className="custom-radioBtn-round">
