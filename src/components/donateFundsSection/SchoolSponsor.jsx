@@ -49,13 +49,13 @@ export default function SchoolSponsor() {
         <div className="flex w-6/12 flex-col gap-10">
           <div className=" flex gap-10 border-b-2 border-b-2 border-light-gray+ pb-2 font-['Arial'] text-lg font-bold leading-loose">
             <button
-              className={`hover:text-burkina-blue ${activeButton === "story" ? "text-burkina-blue" : ""}`}
+              className={`text-black hover:text-burkina-blue ${activeButton === "story" ? "text-burkina-blue" : ""}`}
               onClick={() => setActiveButton("story")}
             >
               Story
             </button>
             <button
-              className={`hover:text-burkina-blue ${activeButton === "update" ? "text-burkina-blue" : ""}`}
+              className={`text-black hover:text-burkina-blue ${activeButton === "update" ? "text-burkina-blue" : ""}`}
               onClick={() => setActiveButton("update")}
             >
               Update
