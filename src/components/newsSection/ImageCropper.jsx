@@ -61,6 +61,7 @@ const ImageCropper = ({ imageUrl, coordinates }) => {
         loading="lazy"
         className="h-64 w-64 rounded-t-2xl object-cover"
         src={croppedImageUrl}
+        alt="Loading..."
       />
     </div>
   );
