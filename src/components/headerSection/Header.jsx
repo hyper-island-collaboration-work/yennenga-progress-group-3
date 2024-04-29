@@ -10,7 +10,7 @@ export default function Header({ bgImage, heading, styles, children }) {
       <div className={`hero-section--container ${styles}`}>
         {children}
         <div>
-          <h1 className="font-['Apple SD Gothic Neo'] text-8xl font-semibold">
+          <h1 className="text-8xl leading-tight">
             {heading}
           </h1>
         </div>

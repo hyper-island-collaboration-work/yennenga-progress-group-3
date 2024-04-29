@@ -20,13 +20,13 @@ export default function OurMethods() {
   ];
 
   return (
-    <section className="section-method my-24 flex flex-col items-center gap-10 text-center">
+    <section className="section-method my-24 px-7 flex flex-col gap-9 items-center">
       <div>
-        <h2 className="font-['Apple SD Gothic Neo'] text-5xl font-semibold text-black">
+        <h2>
           Our method
         </h2>
       </div>
-      <div className="flex gap-6">
+      <div className="flex gap-6 text-center px-7">
         {methodItems.map(({ image, heading, text }) => (
           <Method key={heading} image={image} text={text} heading={heading} />
         ))}

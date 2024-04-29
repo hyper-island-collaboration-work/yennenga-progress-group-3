@@ -12,7 +12,7 @@ function Footer() {
       <div className="bg-sand">
         <WhistleBlowing />
         <footer
-          className="footer flex gap-40 bg-cover bg-top px-16 py-24 font-['Arial'] text-lg font-normal leading-loose text-light-gray"
+          className="footer flex gap-40 bg-cover bg-top px-16 py-24 text-lg leading-loose"
           style={{ backgroundImage: `url(${footerBackground})` }}
         >
           <div className="footer-container flex flex-col gap-10 text-lg">
@@ -32,7 +32,7 @@ function Footer() {
                 <p>Org.nr: 802445-9987</p>
               </div>
               <div>
-                <h6 className="font-bold">Sweden</h6>
+                <h6>Sweden</h6>
                 <p>
                   <a className="hover:underline" href="tel: +46 735 176 200">
                     tel: +46 735 176 200
@@ -50,7 +50,7 @@ function Footer() {
                 <p>102 61 Stockholm</p>
               </div>
               <div>
-                <h6 className="font-bold">Burkina Faso</h6>
+                <h6>Burkina Faso</h6>
                 <p>
                   <a className="hover:underline" href="tel: +22 676 389 902">
                     tel: +22 676 389 902

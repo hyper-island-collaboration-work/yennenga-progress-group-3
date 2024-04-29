@@ -80,9 +80,9 @@ export default function RecentNews() {
     >
       <div className="flex flex-col">
         <div className="flex justify-between px-20 py-16 items-center">
-          <h1 className="font-['Apple SD Gothic Neo'] text-5xl font-bold capitalize text-black">
+          <h2>
             Recent News
-          </h1>
+          </h2>
           <div>
             <MoreButton link={"News"} text={"More news"}/>
           </div>
@@ -93,7 +93,7 @@ export default function RecentNews() {
             onClick={() => {
               slideLeft(castSliderId);
             }}
-            className="absolute left-2 top-1/2 z-10 -translate-y-1/2 cursor-pointer text-black opacity-90 duration-200 group-hover:block lg:hover:scale-125"
+            className="absolute left-2 top-1/2 z-10 -translate-y-1/2 cursor-pointer opacity-90 duration-200 group-hover:block lg:hover:scale-125"
             size={40}
           />
           <div
@@ -123,11 +123,11 @@ export default function RecentNews() {
                     }}
                   />
                 )}
-                <div className="mb-4 h-52 rounded-b-2xl bg-white px-4 pb-2 pt-3 text-black">
+                <div className="mb-4 h-52 rounded-b-2xl bg-white px-4 pb-2 pt-3">
                   <p className="text-xl text-light-gray+">
                     {formatDate(post.fields.createdDate)}
                   </p>
-                  <p className="text-2xl font-bold">{post.fields.newsTitle}</p>
+                  <h4>{post.fields.newsTitle}</h4>
                 </div>
               </div>
             ))}
@@ -136,7 +136,7 @@ export default function RecentNews() {
             onClick={() => {
               slideRight(castSliderId);
             }}
-            className="absolute right-2 top-1/2 z-10 -translate-y-1/2 cursor-pointer text-black opacity-90 duration-200 group-hover:block lg:hover:scale-125"
+            className="absolute right-2 top-1/2 z-10 -translate-y-1/2 cursor-pointer opacity-90 duration-200 group-hover:block lg:hover:scale-125"
             size={40}
           />
         </div>

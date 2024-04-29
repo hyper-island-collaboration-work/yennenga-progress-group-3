@@ -8,3 +8,38 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f0f0f0;
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Apple SD Gothic Neo", sans-serif;
+  font-weight: bold;
+}
+
+h1,
+header,
+footer {
+  color: #f0f0f0;
+}
+
+h2 {
+  font-size: 2.875rem;
+}
+
+h3 {
+  font-size: 2.125rem;
+  line-height: 47.6px;
+}
+
+h4 {
+  font-size: 1.625rem;
+}

@@ -6,7 +6,7 @@ export default function Partners() {
     <section className="partners flex flex-col items-center gap-24 py-24">
       <div className="grid w-full grid-cols-3 justify-items-end px-24 ">
         <div className="col-start-2">
-          <h2 className="font-['Apple SD Gothic Neo'] text-5xl font-bold">
+          <h2>
             Our partners
           </h2>
         </div>
