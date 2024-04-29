@@ -78,10 +78,10 @@ export default function RecentNews() {
         backgroundPosition: "bottom",
       }}
     >
-      <div className="flex flex-col">
-        <div className="flex items-center justify-between px-20 py-16">
-          <h2>Recent News</h2>
-          <div>
+      <div className="flex flex-col gap-16">
+        <div className="flex items-center justify-between border-umber+ w-full border-b-2 py-6">
+          <h2 className="pl-36">Recent News</h2>
+          <div className="pr-28">
             <MoreButton link={"News"} text={"More news"} />
           </div>
         </div>

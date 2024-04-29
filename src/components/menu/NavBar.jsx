@@ -11,26 +11,25 @@ export default function NavBar() {
       dropdownList: [
         "Education",
         "Health",
-        "Infrastructure/entrepreneurship",
         "Management",
       ],
     },
     {
       menuText: "Engage yourself",
       dropdownList: [
-        "Become a member",
-        "Start your own fund",
         "Share your skill",
+        "Start your own fund",
+        "Become a member",
         "FAQ",
       ],
     },
     {
       menuText: "About us",
       dropdownList: [
-        "Our partners",
         "Who Yennenga Progress are",
-        "Our socials",
-        "UN Goals",
+        "History",
+        "Our partners",
+        "UN Goals"
       ],
     },
   ];
