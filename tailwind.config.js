@@ -9,6 +9,7 @@ export default {
       "light-gray-": "F6F6F6",
       "black": "#000000",
       "umber": "#AF6B48",
+      "umber+": "#8C563A",
       "burkina-blue": "#215ECF",
       "dark-blue": "#294C9C",
       "white": "#FFFFFF",
