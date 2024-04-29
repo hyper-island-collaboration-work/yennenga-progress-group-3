@@ -13,7 +13,7 @@ export default function RecentNews() {
 
   const client = contentful.createClient({
     space: "drwwam889eac",
-    environment: "master", // defaults to 'master' if not set
+    environment: "master",
     accessToken: "i7gTUFaXecTvXpkduPoRfWqzE7F7L9ZvyDf6xSv7BVY",
   });
 
@@ -94,42 +94,46 @@ export default function RecentNews() {
             className="absolute left-2 top-1/2 z-10 -translate-y-1/2 cursor-pointer opacity-90 duration-200 group-hover:block lg:hover:scale-125"
             size={40}
           />
-          <div
-            className="newsSection-scrollbar flex flex-row gap-6 overflow-x-scroll scroll-smooth px-20 drop-shadow-lg"
-            id={castSliderId}
-          >
-            {newsPosts.map((post) => (
-              <div
-                key={post.sys.id}
-                className="relative flex w-64 flex-shrink-0 flex-col"
-              >
-                {post.fields.imageFocalPoint?.fields?.image?.fields?.file
-                  ?.url && (
-                  <ImageCropper
-                    imageUrl={`https:${post.fields.imageFocalPoint.fields.image.fields.file.url}`}
-                    coordinates={{
-                      x: post.fields.imageFocalPoint.fields.focalPoint
-                        .focalPoint.x,
-                      y: post.fields.imageFocalPoint.fields.focalPoint
-                        .focalPoint.y,
-                      width:
-                        post.fields.imageFocalPoint.fields.image.fields.file
-                          .details.image.width,
-                      height:
-                        post.fields.imageFocalPoint.fields.image.fields.file
-                          .details.image.height,
-                    }}
-                  />
-                )}
-                <div className="mb-4 h-52 rounded-b-2xl bg-white px-4 pb-2 pt-3">
-                  <p className="text-xl text-light-gray+">
-                    {formatDate(post.fields.createdDate)}
-                  </p>
-                  <h4>{post.fields.newsTitle}</h4>
+          {newsPosts.length > 0 ? (
+            <div
+              className="newsSection-scrollbar flex flex-row gap-6 overflow-x-scroll scroll-smooth px-20 drop-shadow-lg"
+              id={castSliderId}
+            >
+              {newsPosts.map((post) => (
+                <div
+                  key={post.sys.id}
+                  className="relative flex w-64 flex-shrink-0 flex-col"
+                >
+                  {post.fields.imageFocalPoint?.fields?.image?.fields?.file
+                    ?.url && (
+                    <ImageCropper
+                      imageUrl={`https:${post.fields.imageFocalPoint.fields.image.fields.file.url}`}
+                      coordinates={{
+                        x: post.fields.imageFocalPoint.fields.focalPoint
+                          .focalPoint.x,
+                        y: post.fields.imageFocalPoint.fields.focalPoint
+                          .focalPoint.y,
+                        width:
+                          post.fields.imageFocalPoint.fields.image.fields.file
+                            .details.image.width,
+                        height:
+                          post.fields.imageFocalPoint.fields.image.fields.file
+                            .details.image.height,
+                      }}
+                    />
+                  )}
+                  <div className="mb-4 h-52 rounded-b-2xl bg-white px-4 pb-2 pt-3">
+                    <p className="text-xl text-light-gray+">
+                      {formatDate(post.fields.createdDate)}
+                    </p>
+                    <h4>{post.fields.newsTitle}</h4>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <p>No recent news</p>
+          )}
           <IoIosArrowDroprightCircle
             onClick={() => {
               slideRight(castSliderId);
