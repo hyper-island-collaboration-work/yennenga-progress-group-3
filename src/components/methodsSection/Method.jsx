@@ -1,6 +1,6 @@
 export default function Method({ image, heading, text }) {
   return (
-    <div className="wrapper flex flex-col items-center gap-10 ">
+    <div className="flex flex-col items-center gap-10 ">
       <div>
         <img src={`/images/${image}`} />
       </div>

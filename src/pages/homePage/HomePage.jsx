@@ -11,17 +11,17 @@ export default function HomePage() {
   return (
     <>
       <Navbar />
-      <Header
-        bgImage={MainImage}
-        heading={"Building sustainable societies"}
-        styles={"flex items-center gap-10 px-20 pb-24 pt-10"}
-      >
-        <DonationForm formWidth={"w-[46.5rem]"} />
-      </Header>
-      <OurMethods />
-      <RecentNews />
-      <Partners />
-      <Footer />
+        <Header
+          bgImage={MainImage}
+          heading={"Building sustainable societies"}
+          styles={"flex items-center gap-10 px-20 pb-24 pt-10"}
+        >
+          <DonationForm formWidth={"w-[45rem]"} />
+        </Header>
+        <OurMethods />
+        <RecentNews />
+        <Partners />
+        <Footer />
     </>
   );
 }

@@ -1,6 +1,6 @@
 export default function Funds({ image, heading, text }) {
   return (
-    <div className="wrapper flex flex-col gap-4 rounded-[2rem] bg-light-gray hover:brightness-75">
+    <div className="flex flex-col gap-4 rounded-[2rem] bg-light-gray hover:brightness-75">
       <div>
         <img src={`/images/${image}`} />
       </div>
