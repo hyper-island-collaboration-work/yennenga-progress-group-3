@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
+import { ChevronDownIcon } from '@heroicons/react/solid'
 import DropdownMenuItem from "./DropdownMenuItem";
 import { useState } from "react";
 
@@ -24,7 +25,7 @@ export default function Dropdown({ rootItem, items }) {
       <div className="h-full">
         <Menu.Button className=" inline-flex h-full items-center justify-center gap-2 font-normal">
           {rootItem}
-          <img src="/vector/dropdown.svg" alt="dropdown icon" />
+          <ChevronDownIcon className="h-6 w-6 text-light-gray" alt="dropdown icon" />
         </Menu.Button>
       </div>
 
