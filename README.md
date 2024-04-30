@@ -5,7 +5,7 @@ MVP project of the website for the non-profit organization Yennenga Progress as 
 ***This is a website where you can view information about the activities of the organization, its past and current projects, and news. In the future, there are plans to develop a donation functionality and a subscription option to become a member.***
 
 ## Tools and stack: 
-* HTML/ CSS / Tailwindcss / React.js / Contentful CMS / Vitest
+* HTML / CSS / Tailwindcss / React.js / Contentful CMS / Vitest
 
 ## Project links:
 ### Website: [Visit our website](https://yennengaprogress.netlify.app/)
