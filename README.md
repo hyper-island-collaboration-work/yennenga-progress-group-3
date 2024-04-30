@@ -13,7 +13,7 @@ MVP project of the website for the non-profit organization Yennenga Progress as 
 ## Third-party libraries:
 * CSS framework Tailwindcss: [Tailwind](https://tailwindcss.com/)
 * Custom Content Management Contentful: [Contentful](https://www.contentful.com/get-started/)
-* JavaScript Testing Jest:[Vitest](https://vitest.dev/guide/)
+* JavaScript Testing Jest: [Vitest](https://vitest.dev/guide/)
 
 
 ## Project Setup Instructions:
