@@ -25,7 +25,7 @@ export default function Dropdown({ rootItem, items }) {
       <div className="h-full">
         <Menu.Button className=" inline-flex h-full items-center justify-center gap-2 font-normal">
           {rootItem}
-          <ChevronDownIcon className="h-6 w-6 text-light-gray" alt="dropdown icon" />
+          <ChevronDownIcon className="h-6 w-6 text-light-gray"/>
         </Menu.Button>
       </div>
 
