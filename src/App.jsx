@@ -14,10 +14,12 @@ import FAQPage from "./pages/FAQPage/FAQPage";
 import EducationPage from "./pages/projectsFlow/EducationPage";
 import PreschoolPage from "./pages/projectsFlow/PreschoolPage";
 import UNGoalsPage from "./pages/UNGoalsFlow/UNGoalsPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/BecomeAMember" element={<BecomeMemberPage />} />

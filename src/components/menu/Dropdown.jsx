@@ -42,7 +42,7 @@ export default function Dropdown({ rootItem, items }) {
         <Menu.Items className="absolute z-10 w-48 bg-black rounded-bl-3xl rounded-br-3xl px-4 pt-2 pb-4">
           <div>
             {items.map((item) => (
-              <DropdownMenuItem>{item}</DropdownMenuItem>
+              <DropdownMenuItem link={item.itemLink}>{item.itemText}</DropdownMenuItem>
             ))}
           </div>
         </Menu.Items>
