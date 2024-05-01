@@ -65,13 +65,13 @@ function BottomBar() {
             <div className="flex gap-20">
               <ul className="flex flex-col gap-4 font-bold">
                 <li>
-                  <NavLink to="/News">News</NavLink>
+                  <NavLink to="/News">Donate</NavLink>
                 </li>
                 <li>
-                  <NavLink to="#">Calendar</NavLink>
+                  <NavLink to="#">News</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/Donation">Donate</NavLink>
+                  <NavLink to="/Donation">Events</NavLink>
                 </li>
                 <li>
                   <NavLink to="/Whistleblowing">Whistle blowing</NavLink>

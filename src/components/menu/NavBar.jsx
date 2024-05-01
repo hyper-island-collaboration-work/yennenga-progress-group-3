@@ -73,7 +73,7 @@ export default function NavBar() {
         </li>
         <li className="list-item">
           <NavLink className="list-link" to="#">
-            Calendar
+            Events
           </NavLink>
         </li>
       </ul>
