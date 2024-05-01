@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import { useEffect, useState } from "react";
-import useScrollListener from "../../hooks/useScrollListener/useScrollListener"
+import useScrollListener from "../../hooks/useScrollListener/useScrollListener";
 import "./navbar.css";
 
 export default function NavBar() {
@@ -9,27 +9,60 @@ export default function NavBar() {
     {
       menuText: "Projects",
       dropdownList: [
-        "Education",
-        "Health",
-        "Management",
+        {
+          itemText: "Education",
+          itemLink: "/Education",
+        },
+        {
+          itemText: "Health",
+          itemLink: "#",
+        },
+        {
+          itemText: "Management",
+          itemLink: "#",
+        },
       ],
     },
     {
       menuText: "Engage yourself",
       dropdownList: [
-        "Share your skill",
-        "Start your own fund",
-        "Become a member",
-        "FAQ",
+        {
+          itemText: "Share your skill",
+          itemLink: "/ShareYourSkill",
+        },
+        {
+          itemText: "Start your own fund",
+          itemLink: "/StartYourOwnFund",
+        },
+        {
+          itemText: "Become a member",
+          itemLink: "/BecomeAMember",
+        },
+        {
+          itemText: "FAQ",
+          itemLink: "/FAQ",
+        },
       ],
     },
     {
       menuText: "About us",
       dropdownList: [
-        "Who Yennenga Progress are",
-        "History",
-        "Our partners",
-        "UN Goals"
+        {
+          itemText: "Who Yennenga Progress are",
+          itemLink: "/AboutUs",
+        },
+        {
+          itemText: "History",
+          itemLink: "#",
+        },
+        {
+          itemText: "Our partners",
+          itemLink: "/OurPartners",
+        },
+        {
+          itemText: "UN Goals",
+          itemLink: "/UNGoals",
+        },
       ],
     },
   ];
