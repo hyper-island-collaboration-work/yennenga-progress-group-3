@@ -4,10 +4,12 @@ import NavBar from "../../components/menu/NavBar";
 import MainImage from "/images/SchoolSponsor-bg.png";
 import SchoolSponsor from "../../components/donateFundsSection/SchoolSponsor";
 import OurFunds from "../../components/donateFundsSection/OurFunds";
+import TopBar from "../../components/headerSection/TopBar";
 
 export default function SchoolSponsorPage() {
   return (
     <>
+      <TopBar />
       <NavBar />
       <Header
         bgImage={MainImage}
@@ -16,7 +18,7 @@ export default function SchoolSponsorPage() {
       />
       <SchoolSponsor />
       <OurFunds />
-      <BottomBar/>
+      <BottomBar />
     </>
   );
 }

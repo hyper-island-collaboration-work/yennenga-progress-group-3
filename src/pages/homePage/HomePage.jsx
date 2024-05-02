@@ -6,22 +6,24 @@ import Partners from "../../components/partnersSection/Partners";
 import RecentNews from "../../components/newsSection/RecentNews";
 import MainImage from "/images/Landing-bg.png";
 import DonationForm from "../../components/donationForm/DonationForm";
+import TopBar from "../../components/headerSection/TopBar";
 
 export default function HomePage() {
   return (
     <>
+      <TopBar />
       <Navbar />
-        <Header
-          bgImage={MainImage}
-          heading={"Building sustainable societies"}
-          styles={"flex items-center gap-10 px-20 pb-24 pt-10"}
-        >
-          <DonationForm formWidth={"w-[45rem]"} />
-        </Header>
-        <OurMethods />
-        <RecentNews />
-        <Partners />
-        <BottomBar />
+      <Header
+        bgImage={MainImage}
+        heading={"Building sustainable societies"}
+        styles={"flex items-center gap-10 px-20 pb-24 pt-10"}
+      >
+        <DonationForm formWidth={"w-[45rem]"} />
+      </Header>
+      <OurMethods />
+      <RecentNews />
+      <Partners />
+      <BottomBar />
     </>
   );
 }

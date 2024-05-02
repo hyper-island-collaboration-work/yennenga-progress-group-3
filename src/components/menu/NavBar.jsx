@@ -82,7 +82,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`nabvar ${navClassList.join(" ")} sticky z-10 mt-20 flex h-24 w-full items-center justify-between bg-black px-10 text-lg text-light-gray transition delay-100 ease-in-out`}
+      className={`nabvar ${navClassList.join(" ")} sticky z-10 flex h-24 w-full items-center justify-between bg-black px-10 text-lg text-light-gray transition delay-100 ease-in-out`}
     >
       <div className="navbar-logo">
         <NavLink to="/" aria-label="Navigate to the Home Page">
