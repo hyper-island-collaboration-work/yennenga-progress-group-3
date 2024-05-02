@@ -15,7 +15,7 @@ export default function TopBar() {
   };
 
   return (
-    <div className="topbar-container fixed top-0 z-20 flex h-20 w-full items-center justify-between bg-umber px-10">
+    <div className="topbar-container sticky top-0 z-20 flex h-20 w-full items-center justify-between bg-umber px-10">
       <NavLink to="/Whistleblowing">
         <div className="black-btn inline-flex items-center justify-center gap-2">
           <button className="WhistleBlowing-btn">Whistle blowing</button>
@@ -34,7 +34,7 @@ export default function TopBar() {
           as="div"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          className="inline-block h-full text-center"
+          className="inline-block h-full"
         >
           <div className="h-full">
             <Menu.Button className="flex h-full items-center">
@@ -55,7 +55,7 @@ export default function TopBar() {
             leaveTo="transform opacity-0 scale-95"
           >
             <Menu.Items className="absolute right-0 top-20 z-10 rounded-bl-3xl rounded-br-3xl bg-umber px-10 pb-4">
-              <div className="text-xs font-normal">
+              <div className="text-xs font-normal text-light-gray">
                 <Menu.Item className="block py-1 hover:text-dark-blue">
                   <NavLink to="#">Swedish</NavLink>
                 </Menu.Item>

@@ -6,7 +6,6 @@ export default function Header({ bgImage, heading, styles, children }) {
       style={{ backgroundImage: `url(${bgImage})` }}
       className="header bg-cover bg-bottom text-light-gray "
     >
-      <TopBar />
       <div className={`hero-section--container ${styles}`}>
         {children}
         <div>
