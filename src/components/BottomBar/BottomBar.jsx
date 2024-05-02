@@ -1,7 +1,7 @@
 import React from "react";
 import footerBackground from "/images/Footer_background.webp";
-import footerLogo from "/images/yp_logo_white.svg";
-import footer90KontoLogo from "/images/90_konto_logo_neg 1.png";
+import footerLogo from "/vector/yp_logo_white.svg";
+import footer90KontoLogo from "/vector/svenskkontroll.svg";
 import { NavLink } from "react-router-dom";
 import SocialMedia from "./SocialMedia";
 import WhistleBlowing from "./WhistleBlowingSection";

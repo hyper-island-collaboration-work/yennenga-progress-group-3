@@ -8,7 +8,7 @@ function WhistleBlowing() {
         <div className="flex gap-8 rounded-full bg-black px-16 py-8 text-4xl transition duration-300 hover:bg-dark-blue ">
           <button> Whistle blowing</button>
           <img
-            src="public\vector\whistleIcon.svg"
+            src="/vector/whistleIconBig.svg"
             alt="Whistle"
             className="h-16 w-24"
           />
