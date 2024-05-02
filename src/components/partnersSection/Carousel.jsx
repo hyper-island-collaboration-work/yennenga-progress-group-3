@@ -97,7 +97,7 @@ const Partner = () => {
           (prevPosition) => (prevPosition + 1) % images1.length,
         );
       }
-    }, 500);
+    }, 600);
 
     return () => clearInterval(interval);
   }, [isPaused, images1.length]);
