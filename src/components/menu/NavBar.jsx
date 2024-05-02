@@ -86,7 +86,7 @@ export default function NavBar() {
     >
       <div className="navbar-logo">
         <NavLink to="/" aria-label="Navigate to the Home Page">
-          <img src="/images/yp_logo_brown.svg" alt="Yennenga Progress Logo" />
+          <img src="/vector/yp_logo_brown.svg" alt="Yennenga Progress Logo" />
         </NavLink>
       </div>
       <ul className="navbar-list flex h-full items-center justify-center gap-12">
