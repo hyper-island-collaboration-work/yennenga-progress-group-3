@@ -5,7 +5,7 @@ export default function Method({ image, heading, text, spanText }) {
         <img src={`/images/${image}`} />
       </div>
       <div>
-        <h3>{heading}</h3>
+        <h4>{heading}</h4>
       </div>
       <div>
         <span className="text-umber+">{spanText}</span>

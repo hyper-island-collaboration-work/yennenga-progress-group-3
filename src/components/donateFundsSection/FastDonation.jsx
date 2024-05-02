@@ -2,7 +2,7 @@ import DonationForm from "../donationForm/DonationForm";
 
 export default function FastDonation() {
   return (
-    <section className="flex gap-20 px-48 py-20">
+    <section className="flex gap-20 px-48 my-24">
       <div className="flex flex-col gap-10">
         <h2 className="text-burkina-blue">Fast donation</h2>
         <DonationForm formWidth={"w-[28.5rem]"} />

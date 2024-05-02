@@ -35,7 +35,7 @@ export default function NavBar() {
           itemLink: "/StartYourOwnFund",
         },
         {
-          itemText: "Become a member",
+          itemText: "Become our partner",
           itemLink: "/BecomeAMember",
         },
         {

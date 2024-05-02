@@ -8,7 +8,7 @@ export default function SchoolSponsor() {
   const [activeButton, setActiveButton] = useState("story");
 
   return (
-    <section className="mb-20 mt-10 flex flex-col gap-10 px-20">
+    <section className="mb-24 mt-10 flex flex-col gap-10 px-20">
       <div className="flex items-center justify-between">
         <div>
           <NavLink to="/Donation">
@@ -66,9 +66,10 @@ export default function SchoolSponsor() {
             <p className="text-xl leading-loose text-light-green">
               300 SEK/month
             </p>
-            <button className="inline-flex w-auto items-center justify-center rounded-full border-[20px] border-burkina-blue bg-burkina-blue text-2xl text-light-gray transition delay-100 ease-in-out hover:border-dark-blue hover:bg-dark-blue">
-              Sponsor Schools
-            </button>
+            <div className="flex items-center justify-center gap-2 rounded-full border-burkina-blue bg-burkina-blue py-7 text-2xl text-light-gray transition delay-100 ease-in-out hover:border-dark-blue hover:bg-dark-blue">
+              <button>Sponsor Schools</button>
+              <img src="/vector/sponsorSchool.svg" alt="hand with heart" />
+            </div>
             {activeButton === "story" && (
               <p className=" text-lg ">
                 School sponsors are important for long-term development. We have

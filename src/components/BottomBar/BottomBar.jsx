@@ -98,7 +98,7 @@ function BottomBar() {
                   <NavLink to="/StartYourOwnFund">Start your own fund</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/BecomeAMember">Become a member</NavLink>
+                  <NavLink to="/BecomeAMember">Become our partner</NavLink>
                 </li>
                 <li>
                   <NavLink to="/FAQ">FAQ</NavLink>

@@ -71,7 +71,7 @@ export default function RecentNews() {
 
   return (
     <section
-      className="h-[calc(100vh - 20rem)] pb-32"
+      className="h-[calc(100vh - 20rem)]"
       style={{
         backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets/TEMP/98a134c5deae1c20c5f944b85b133362bf9408906cc44b6012fb224f29b3a65b?')`,
         backgroundSize: "cover",

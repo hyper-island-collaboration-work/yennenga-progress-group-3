@@ -3,7 +3,7 @@ import { SocialIcon } from "react-social-icons";
 
 function SocialMedia() {
   return (
-    <div className="flex flex-col items-center gap-9 py-24 text-2xl">
+    <div className="flex flex-col items-center gap-9 my-24 text-2xl">
       <p>Follow us on</p>
       <div className="flex justify-center gap-12 ">
         <SocialIcon

@@ -34,13 +34,16 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
-  line-height: 47.6px;
-  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: black;
 }
 
 h4 {
-  font-size: 1.625rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
 }
 
 h6 {
