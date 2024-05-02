@@ -20,7 +20,7 @@ MVP project of the website for the non-profit organization Yennenga Progress as 
 ## Project Setup Instructions:
 To set up this project locally, follow the steps below:
 
-### To open web site locally:
+### To open the website locally:
 
 1. **Clone the Repository:**
 
@@ -33,14 +33,10 @@ To set up this project locally, follow the steps below:
     ```bash
     npm install
     ```
-3. **Running the web-site:**
+3. **Running the website:**
 
     ```bash
     npm run dev
     ```    
 
-4. **Open web site locally**
-
-### To run unit tests:
-
-1. **Open a new window in the terminal.:**
+4. **Open website locally**
