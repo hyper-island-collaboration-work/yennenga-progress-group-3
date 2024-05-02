@@ -2,7 +2,7 @@
 
 MVP project of the website for the non-profit organization Yennenga Progress as part of the 'Code & Collaborate' course, Hyper Island.
 
-***This is a website where you can view information about the activities of the organization, its past and current projects, and news. In the future, there are plans to develop a donation functionality, a subscription option to become a member, make the website SEO-friendly and accessible on different devised, complete all pages of the website, and implement SSR to enhance performance***
+***This is a website where you can view information about the activities of the organization, its past and current projects, and news. In the future, there are plans to develop a donation functionality, a subscription option to become a member, make the website SEO-friendly and accessible on different devised, complete all pages of the website, and implement SSR to enhance performance.***
 
 ## Tools and stack: 
 * HTML / CSS / Tailwindcss / React.js / Contentful CMS / Vitest / Chakra
