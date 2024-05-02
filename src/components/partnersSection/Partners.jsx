@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 
 export default function Partners() {
   return (
-    <section className="partners flex flex-col items-center gap-24 py-24">
+    <section className="partners flex flex-col items-center gap-16 my-24">
       <div className="flex justify-between border-umber+ w-full border-b-2 pb-6">
         <div>
           <h2 className="pl-36">Our partners</h2>

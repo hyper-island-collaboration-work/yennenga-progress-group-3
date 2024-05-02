@@ -46,10 +46,10 @@ export default function ScrollSection() {
   ];
 
   return (
-    <div className="flex flex-col gap-16">
+    <div className="flex flex-col gap-16 px-10">
       <div>
         <div className="mb-10">
-          <h3 className="ml-16">Become a monthly sponsor</h3>
+          <h3 className="pl-20">Become a monthly sponsor</h3>
         </div>
         <div
           id="controls-carousel"
@@ -62,7 +62,6 @@ export default function ScrollSection() {
                 <div key={heading}>
                   {link ? ( // Check if link exists
                     <NavLink to={link} activeClassName="active-link">
-                      {" "}
                       {/* NavLink to another page */}
                       <Funds image={image} text={text} heading={heading} />
                     </NavLink>
