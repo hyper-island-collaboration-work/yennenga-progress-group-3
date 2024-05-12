@@ -84,7 +84,7 @@
 /* Create a custom radio button */
 .custom-radioBtn-big .checkmark {
   background-color: transparent;
-  border: 2px #F0F0F0 solid;
+  border: 2px #f0f0f0 solid;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
 }
@@ -107,4 +107,13 @@
 
 .data-inputs:empty {
   display: none;
+}
+
+.form-btn:disabled {
+  background-color: #c0c0c0;
+  color: #909090;
+}
+
+.form-btn:disabled:hover {
+  pointer-events: none;
 }

@@ -13,11 +13,11 @@ body {
   color: black;
   font-family: Arial, sans-serif;
   font-size: 1.125rem;
-  line-height: 1.75rem; 
+  line-height: 1.75rem;
 }
 
 h1,
-h2{
+h2 {
   font-family: "Apple SD Gothic Neo", sans-serif;
   font-weight: bold;
 }
@@ -30,7 +30,7 @@ footer {
 
 h2 {
   font-size: 2.875rem;
-  color: #8C563A;
+  color: #8c563a;
 }
 
 h3 {
@@ -63,7 +63,8 @@ button {
 }
 
 .black-btn:hover,
-.blue-btn:hover {
+.blue-btn:hover,
+.form-btn:hover {
   background-color: #294c9c;
   transition: ease-in-out;
   transition-delay: 100ms;
