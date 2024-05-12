@@ -84,6 +84,9 @@
 /* Create a custom radio button */
 .custom-radioBtn-big .checkmark {
   background-color: transparent;
+  border: 2px #F0F0F0 solid;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 /* On mouse-over*/
@@ -94,4 +97,14 @@
 /* When the radio button is checked*/
 .custom-radioBtn-big input:checked ~ .checkmark {
   background-color: #215ecf;
+}
+
+.data-inputs input {
+  height: 45px;
+  width: 359px;
+  padding-inline: 2rem;
+}
+
+.data-inputs:empty {
+  display: none;
 }
