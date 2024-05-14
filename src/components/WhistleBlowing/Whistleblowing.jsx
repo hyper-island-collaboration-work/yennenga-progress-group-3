@@ -1,9 +1,9 @@
 export default function Whistleblowing() {
   return (
     <section className="px-40 pb-80 pt-12">
-      <div className="flex flex-col gap-32 pb-44">
-        <div className="flex justify-between">
-          <div className="flex w-5/12 flex-col gap-10">
+      <div className="flex flex-col gap-32 pb-44  bg-sand">
+        <div className="flex justify-between ">
+          <div className="flex w-5/12 m-20 flex-col gap-10">
             <h3>Vi vill göra rätt</h3>
             <p>
               Som företag verkar vi för ett gott och etiskt arbetssätt. Därför
@@ -12,15 +12,15 @@ export default function Whistleblowing() {
               värnar vi om allas mående innanför och utanför vår verksamhet.
             </p>
           </div>
-          <div>
+          <div className="mr-20">
             <img src="./images/item-1.png" alt="" />
           </div>
         </div>
         <div className="flex justify-between">
-          <div>
+          <div className="mr-20">
             <img src="./images/method1.png" alt="" />
           </div>
-          <div className="flex w-5/12 flex-col gap-10">
+          <div className="flex w-5/12 flex-col m-20 gap-10">
             <h3>Det händer sen</h3>
             <p>
               När du skickat in ditt ärende, ljudinspelning eller mötesförfrågan
@@ -33,7 +33,7 @@ export default function Whistleblowing() {
           </div>
         </div>
         <div className="flex justify-between">
-          <div className="flex w-5/12 flex-col gap-10">
+          <div className="flex w-5/12 flex-col m-20 gap-10">
             <h3>Denna visselblåsartjänst</h3>
             <p>
               Genom denna kanal för visselblåsning ger vi alla inom
@@ -47,13 +47,13 @@ export default function Whistleblowing() {
               mötesförfrågningar är du inte anonym.
             </p>
           </div>
-          <div>
+          <div className=" mr-20">
             <img src="./images/method3.png" alt="" />
           </div>
         </div>
       </div>
-      <section className="flex flex-col gap-52 rounded-3xl bg-white px-60 pb-14 pt-20">
-        <div className="flex flex-col gap-2">
+      <section className=" flex flex-col gap-52 rounded-3xl bg-white px-60 pb-14 pt-20">
+        <div className="flex flex-col  gap-2">
           <h3>Hur fungerar det?</h3>
           <p className="text-lg font-normal">
             För att visselblåsa kan du använda denna kanal om du vill rapportera

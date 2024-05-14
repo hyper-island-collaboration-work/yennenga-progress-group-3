@@ -17,6 +17,7 @@ export default function WhistleblowingPage() {
       />
       <Whistleblowing />
       <BottomBar />
+     
     </>
   );
 }
