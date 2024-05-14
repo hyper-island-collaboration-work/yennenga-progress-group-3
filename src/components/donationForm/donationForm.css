@@ -1,3 +1,11 @@
+.form-container {
+  width: 440px;
+}
+
+.donation-form {
+  width: 376px;
+}
+
 /* Customize the label (the container) */
 .custom-radioBtn-round {
   position: relative;

@@ -5,8 +5,8 @@ const typePrivate = "private";
 const typeCompany = "company";
 const oneTimeRecurrence = " donate";
 const monthlyRecurrence = "monthly";
-const amount200 = "200";
-const amount400 = "400";
+const amountSmall = "200";
+const amountBig = "400";
 const amountOptional = "optional";
 
 export default function DonationForm() {
@@ -20,27 +20,29 @@ export default function DonationForm() {
     phone: "",
   });
 
-  function setType(type) {
-    const newState = { ...formState, type: type };
+  function setStateField(field, value) {
+    const newState = { ...formState, [field]: value };
     setFormState(newState);
+  }
+
+  function setType(donationType) {
+    setStateField("type", donationType);
   }
 
   function setRecurrence(recurrence) {
-    const newState = { ...formState, recurrence: recurrence };
-    setFormState(newState);
+    setStateField("recurrence", recurrence);
   }
 
-  function setAmount(amount) {
-    const newState = { ...formState, amount: amount };
-    setFormState(newState);
+  function setAmount(donationAmount) {
+    setStateField("amount", donationAmount);
   }
 
   function setAmountTemplate(amountTemplate) {
     let amount = 0;
 
-    if (amountTemplate === amount200) {
+    if (amountTemplate === amountSmall) {
       amount = 200;
-    } else if (amountTemplate === amount400) {
+    } else if (amountTemplate === amountBig) {
       amount = 400;
     }
 
@@ -53,18 +55,15 @@ export default function DonationForm() {
   }
 
   function setShowPersonalInputs(showPersonalInputs) {
-    const newState = { ...formState, showPersonalInputs: showPersonalInputs };
-    setFormState(newState);
+    setStateField("showPersonalInputs", showPersonalInputs);
   }
 
   function setEmail(email) {
-    const newState = { ...formState, email: email };
-    setFormState(newState);
+    setStateField("email", email);
   }
 
   function setPhone(phone) {
-    const newState = { ...formState, phone: phone };
-    setFormState(newState);
+    setStateField("phone", phone);
   }
 
   const isOptional = formState.amountTemplate === amountOptional;
@@ -76,8 +75,8 @@ export default function DonationForm() {
       (formState.email !== "" && formState.phone !== ""));
 
   return (
-    <div className="w-[440px] rounded-3xl bg-black bg-opacity-70 px-8 py-12">
-      <form className="donation-form flex w-[376px] flex-col items-center justify-between gap-10 text-lg font-bold leading-10 text-light-gray">
+    <div className="form-container rounded-3xl bg-black bg-opacity-70 px-8 py-12">
+      <form className="donation-form flex flex-col items-center justify-between gap-10 text-lg font-bold leading-10 text-light-gray">
         <div className="flex justify-between gap-4 ">
           <legend>Give as:</legend>
           <label className="custom-radioBtn-round">
@@ -136,7 +135,7 @@ export default function DonationForm() {
               type="radio"
               value="200"
               name="amount"
-              onChange={() => setAmountTemplate(amount200)}
+              onChange={() => setAmountTemplate(amountSmall)}
             />
             <span className="checkmark rounded-bl-3xl rounded-tl-3xl px-8">
               200 kr
@@ -148,7 +147,7 @@ export default function DonationForm() {
               type="radio"
               value="400"
               name="amount"
-              onChange={() => setAmountTemplate(amount400)}
+              onChange={() => setAmountTemplate(amountBig)}
             />
             <span className="checkmark border-b-2 border-t-2 px-8">400 kr</span>
           </label>
