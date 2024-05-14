@@ -20,12 +20,14 @@ export default function DonationForm() {
     phone: "",
   });
 
+  //Function which sets property whose name is provided in the field argument
+  //and sets the value of this field to the value argument
   function setStateField(field, value) {
     const newState = { ...formState, [field]: value };
     setFormState(newState);
   }
 
-  function setType(donationType) {
+  function setDonationType(donationType) {
     setStateField("type", donationType);
   }
 
@@ -38,6 +40,8 @@ export default function DonationForm() {
   }
 
   function setAmountTemplate(amountTemplate) {
+    //The form provides an optional donation amount and a predefined one
+    //When the user selects a template we sync the amount with the template
     let amount = 0;
 
     if (amountTemplate === amountSmall) {
@@ -86,7 +90,7 @@ export default function DonationForm() {
               type="radio"
               value="Private person "
               name="type"
-              onChange={() => setType(typePrivate)}
+              onChange={() => setDonationType(typePrivate)}
             />
             <span className="checkmark"></span>
           </label>
@@ -97,7 +101,7 @@ export default function DonationForm() {
               id="company"
               name="type"
               value="Company"
-              onChange={() => setType(typeCompany)}
+              onChange={() => setDonationType(typeCompany)}
             />
             <span className="checkmark"></span>
           </label>
