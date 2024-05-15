@@ -13,7 +13,7 @@ export default function WhistleblowingPage() {
       <Header
         bgImage={MainImage}
         heading={"Whistleblowing"}
-        styles={"pt-52 pb-64 flex justify-center"}
+        styles={"pt-52 pb-64 flex bg-position: bottom  justify-center"}
       />
       <Whistleblowing />
       <BottomBar />
