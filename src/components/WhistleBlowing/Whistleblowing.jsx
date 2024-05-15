@@ -1,3 +1,25 @@
+// Data for the sections
+const sectionsData = [
+  {
+    title: "Vi vill göra rätt",
+    content: "Som företag verkar vi för ett gott och etiskt arbetssätt. Därför vill vi skapa trygghet genom att ta eventuella missförhållanden på allvar. Vår verksamhet byggs av personal och gäster och därför värnar vi om allas mående innanför och utanför vår verksamhet.",
+    imageUrl: "./images/item-1.png",
+    imageAlt: "",
+  },
+  {
+    title: "Det händer sen",
+    content: "När du skickat in ditt ärende, ljudinspelning eller mötesförfrågan så måste vi enligt lag bekräfta mottagandet. Därefter kommer vi så snart vi gått igenom ditt ärende att återkomma till dig. Alla ärenden hanteras av vår oberoende grupp för visselblåsning. För att vår grupp ska anses vara oberoende ingår inte aktieägare, VD eller de högsta beslutfattarna.",
+    imageUrl: "./images/method1.png",
+    imageAlt: "",
+  },
+  {
+    title: "Denna visselblåsartjänst",
+    content: "Genom denna kanal för visselblåsning ger vi alla inom organisationen en lättillgänglig möjlighet att informera (“Visselblåsa”) till en utvald grupp när något inte står rätt till. Vår visselblåsarfunktion kan också användas vid misstanke S K “Early Warning”. Du kan visselblåsa om något har hänt, händer just nu eller om det är något som riskerar att hända. Kom ihåg att generella klagomål inte är en visselblåsning. Vid anonym visselblåsning rapporterar du i skrift, vid muntlig- och mötesförfrågningar är du inte anonym.",
+    imageUrl: "./images/method3.png",
+    imageAlt: "",
+  },
+];
+
 // Reusable Section component
 function Section({ title, content, imageUrl, imageAlt }) {
   return (
@@ -17,29 +39,16 @@ export default function Whistleblowing() {
   return (
     <section className="px-40 pb-80 pt-12">
       <div className="flex flex-col gap-32 pb-44 bg-sand">
-        {/* First Section */}
-        <Section
-          title="Vi vill göra rätt"
-          content="Som företag verkar vi för ett gott och etiskt arbetssätt. Därför vill vi skapa trygghet genom att ta eventuella missförhållanden på allvar. Vår verksamhet byggs av personal och gäster och därför värnar vi om allas mående innanför och utanför vår verksamhet."
-          imageUrl="./images/item-1.png"
-          imageAlt=""
-        />
-
-        {/* Second Section */}
-        <Section
-          title="Det händer sen"
-          content="När du skickat in ditt ärende, ljudinspelning eller mötesförfrågan så måste vi enligt lag bekräfta mottagandet. Därefter kommer vi så snart vi gått igenom ditt ärende att återkomma till dig. Alla ärenden hanteras av vår oberoende grupp för visselblåsning. För att vår grupp ska anses vara oberoende ingår inte aktieägare, VD eller de högsta beslutfattarna."
-          imageUrl="./images/method1.png"
-          imageAlt=""
-        />
-
-        {/* Third Section */}
-        <Section
-          title="Denna visselblåsartjänst"
-          content="Genom denna kanal för visselblåsning ger vi alla inom organisationen en lättillgänglig möjlighet att informera (“Visselblåsa”) till en utvald grupp när något inte står rätt till. Vår visselblåsarfunktion kan också användas vid misstanke S K “Early Warning”. Du kan visselblåsa om något har hänt, händer just nu eller om det är något som riskerar att hända. Kom ihåg att generella klagomål inte är en visselblåsning. Vid anonym visselblåsning rapporterar du i skrift, vid muntlig- och mötesförfrågningar är du inte anonym."
-          imageUrl="./images/method3.png"
-          imageAlt=""
-        />
+        {/* Render Sections dynamically */}
+        {sectionsData.map((section, index) => (
+          <Section
+            key={index}
+            title={section.title}
+            content={section.content}
+            imageUrl={section.imageUrl}
+            imageAlt={section.imageAlt}
+          />
+        ))}
       </div>
 
       {/* Additional Section */}
