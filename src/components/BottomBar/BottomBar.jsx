@@ -5,12 +5,11 @@ import footer90KontoLogo from "/vector/svenskkontroll.svg";
 import { NavLink } from "react-router-dom";
 import SocialMedia from "./SocialMedia";
 import WhistleBlowing from "./WhistleBlowingSection";
-
 function BottomBar() {
   return (
     <>
       <div className="bg-sand">
-        <WhistleBlowing />
+      {/*  <WhistleBlowing />*/ }
         <footer
           className="footer flex flex-col gap-10 bg-cover bg-top px-20 pb-16 pt-28 text-lg leading-loose"
           style={{ backgroundImage: `url(${footerBackground})` }}
