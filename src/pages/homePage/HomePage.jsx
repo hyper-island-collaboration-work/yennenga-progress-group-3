@@ -16,9 +16,9 @@ export default function HomePage() {
       <Header
         bgImage={MainImage}
         heading={"Building sustainable societies"}
-        styles={"flex items-center gap-10 px-20 pb-24 pt-10"}
+        styles={"flex items-center gap-10 pt-7 px-20 pb-28"}
       >
-        <DonationForm formWidth={"w-[45rem]"} />
+      <DonationForm/>
       </Header>
       <OurMethods />
       <RecentNews />

@@ -1,3 +1,11 @@
+.form-container {
+  width: 440px;
+}
+
+.donation-form {
+  width: 376px;
+}
+
 /* Customize the label (the container) */
 .custom-radioBtn-round {
   position: relative;
@@ -84,6 +92,9 @@
 /* Create a custom radio button */
 .custom-radioBtn-big .checkmark {
   background-color: transparent;
+  border: 2px #f0f0f0 solid;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 /* On mouse-over*/
@@ -94,4 +105,23 @@
 /* When the radio button is checked*/
 .custom-radioBtn-big input:checked ~ .checkmark {
   background-color: #215ecf;
+}
+
+.data-inputs input {
+  height: 45px;
+  width: 359px;
+  padding-inline: 2rem;
+}
+
+.data-inputs:empty {
+  display: none;
+}
+
+.form-btn:disabled {
+  background-color: #c0c0c0;
+  color: #909090;
+}
+
+.form-btn:disabled:hover {
+  pointer-events: none;
 }
