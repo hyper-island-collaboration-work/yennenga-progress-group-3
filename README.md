@@ -4,6 +4,14 @@ MVP project of the website for the non-profit organization Yennenga Progress as 
 
 ***This is a website where you can view information about the organization, its history, partners and goals, its past and current projects, how users can engage themselves, and news. In the future, there are plans to develop a donation functionality, a subscription option to become a member, integrate an AI function so that the website can be available in different languages,  make the website SEO-friendly and accessible on different devices, complete all pages of the website, and implement SSR to enhance performance.***
 
+## Hyper Island's Project Brief
+<ul>
+    <li>Create and iterate on user interfaces using design thinking principles, including wireframing, prototyping, and testing with users.</li>
+   <li>Understand and apply agile development principles and methodologies.</li>
+   <li>Analyse and break down design mockups into reusable components, including identifying patterns and common elements that can be abstracted into a design system.</li>
+   <li>Identify key principles of code quality such as maintainability and readability, and methods for applying them, as well as using quality assurance tools such as code review processes, linters, and automated testing.</li>
+</ul>
+
 ## Tools and stack: 
 * HTML / CSS / Tailwindcss / React.js / Contentful CMS / Vitest / Chakra
 
